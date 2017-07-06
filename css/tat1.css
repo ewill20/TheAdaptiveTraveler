@@ -26,6 +26,10 @@
 	background-color: #ff5739;
 	border-color: black;
 	color: white;
+background: -webkit-linear-gradient(#ff670f 0%, #ff5739 100%);
+background: -o-linear-gradient(#ff670f 0%, #ff5739 100%);
+background: linear-gradient(#ff670f 0%, #ff5739 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5739', endColorstr='#ff5739',GradientType=0 );
 }
 .navbar {
 	height: 60px;
