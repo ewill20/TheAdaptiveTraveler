@@ -1,0 +1,36 @@
+#menu1 {
+	position: relative;
+	left: -196px;
+}
+
+.form-control {
+	position: relative;
+	right: -300px;
+	top: -75px;
+}
+#form-control1 {
+	position: relative;
+	top: -50px;
+	right: -310px;
+}
+#submit {
+	position: relative;
+	right: -300px;
+	top: -75px;
+}
+#submit1 {
+	position: relative;
+	right: -310px;
+	top: -50px;
+}
+.btn-default {
+	background-color: #ff5739;
+	border-color: black;
+	color: white;
+}
+.navbar {
+	height: 60px;
+}
+.navbar-brand {
+	line-height: 0;
+}

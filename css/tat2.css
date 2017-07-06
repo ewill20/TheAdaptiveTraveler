@@ -1,0 +1,14 @@
+.form-control {
+	position: relative;
+	top: -50px;
+	right: -310px;
+}
+#submit1 {
+	position: relative;
+	right: -310px;
+	top: -50px;
+}
+.btn-default {
+	background-color: #ff5739;
+	border-color: black;
+	color: white;
