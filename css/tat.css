@@ -1,8 +1,3 @@
-#menu1 {
-	position: relative;
-	left: -196px;
-}
-
 .form-control {
 	position: relative;
 	right: -300px;
@@ -37,4 +32,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5739', end
 }
 .navbar-brand {
 	line-height: 0;
+}
+.buttons {
+	float: none;
+	margin-right: none;
 }
