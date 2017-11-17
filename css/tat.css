@@ -199,5 +199,11 @@ h1 {
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+footer {
+	background-color: #9c9c9c; 
+	color: white; border-top: solid #ff5739 2px; 
+	text-align: center; 
+	padding: 25px 200px 25px 200px;
+}
 
 
