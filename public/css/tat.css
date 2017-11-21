@@ -49,12 +49,12 @@ body {
 	right: -310px;
 }
 .btn-default {
-	background-color: #ff5739 !important;
+	background-color: #ff5800 !important;
 	color: white !important; 
-    background: -webkit-linear-gradient(#ff670f 0%, #ff5739 100%)!important;
-    background: -o-linear-gradient(#ff670f 0%, #ff5739 100%)!important;
-    background: linear-gradient(#ff670f 0%, #ff5739 100%)!important; 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5739', endColorstr='#ff5739',GradientType=0 )!important;
+    background: -webkit-linear-gradient(#ff670f 0%, #ff5800 100%)!important;
+    background: -o-linear-gradient(#ff670f 0%, #ff5800 100%)!important;
+    background: linear-gradient(#ff670f 0%, #ff5800 100%)!important; 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5800', endColorstr='#ff5800',GradientType=0 )!important;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
@@ -151,6 +151,21 @@ input {
 #login-col {
 	padding-left: 0 !important;
 }
+#your-travels-header, #wish-list-header {
+	font-family: 'Fresca', sans-serif;
+	color: #777;
+	font-size: 20px;
+}
+#wish-list-body, #your-travels-body {
+	margin-bottom: 0;	
+}
+.navbar-nav>a.profile-image {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+#profile-dropdown {
+	padding-top: 10px;
+}
 @media (min-width: 768px) {
   .item:nth-child(2n+1) {
     clear: left;
@@ -173,7 +188,7 @@ input {
 	margin-bottom: 5px;
 }
 #footersaying {
-	text-shadow: -1px 0 #ff5739, 0 1px #ff5739, 1px 0 #ff5739, 0 -1px #ff5739; 
+	text-shadow: -1px 0 #ff5800, 0 1px #ff5800, 1px 0 #ff5800, 0 -1px #ff5800; 
 	margin-top: 0px;
 }
 .videos {
@@ -184,7 +199,7 @@ input {
 .media {
 	padding-top: 67px;
 	padding-bottom: 67px;
-	color: #ff5739;
+	color: #ff5800;
 	text-shadow: -1px 0 #e7e7e7, 0 1px #e7e7e7, 1px 0 #e7e7e7, 0 -1px #e7e7e7;
 	
 }
@@ -195,7 +210,7 @@ h1 {
 	width: 120px;
 	text-align: center;
 	font-size: 20px;
-	color: #ff5739;
+	color: #ff5800;
 }
 .dronefootage {
 	width: 220px;
@@ -237,7 +252,7 @@ h1 {
 }
 footer {
 	background-color: #9c9c9c; 
-	color: white; border-top: solid #ff5739 2px; 
+	color: white; border-top: solid #ff5800 2px; 
 	text-align: center; 
 	padding: 25px 200px 25px 200px;
 	position: absolute !important;
