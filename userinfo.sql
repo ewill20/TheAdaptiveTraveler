@@ -36,7 +36,7 @@ VALUES ("Berlin, Germany"),
 	("Manila, Philippines"),
 	("Paris, France"),
 	("Rome, Italy"),
-	("Los Angeles, USA")
+	("Los Angeles, USA"),
 	("Amsterdam, Netherlands")
 
 
