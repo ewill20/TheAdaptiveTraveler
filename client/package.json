@@ -1,32 +1,17 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "TheAdaptiveTraveler",
-  "main": "index.js",
-  "scripts": {
-    "test": "\"test\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ewill20/TheAdaptiveTraveler.git"
-  },
-  "keywords": [
-    "\"Travel",
-    "App",
-    "That",
-    "Helps",
-    "Culturally",
-    "Inclined",
-    "Travelers\""
-  ],
-  "author": "Eric Willard",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ewill20/TheAdaptiveTraveler/issues"
-  },
-  "homepage": "https://github.com/ewill20/TheAdaptiveTraveler#readme",
+  "private": true,
+  "proxy": "http://localhost:3306/",
   "dependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

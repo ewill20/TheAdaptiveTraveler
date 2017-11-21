@@ -17,7 +17,7 @@ $("#create-profile").on("click", function() {
 
 // "Your Travels" click listener that will redirect user to login page //
 $("#yourTravels").on("click", function() {
-	window.location = "index.1.2.html";
+	window.location = "index1.2.html";
 	console.log("Going to login page");
 });
 
