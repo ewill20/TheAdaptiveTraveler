@@ -1,20 +1,21 @@
-// Here we require/import the HTTP module //
-var http = require("http");
-var express = require('express');
-var bodyParser = require('body-parser');
+// Here we require the various dependencies //
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const mysql = require('mysql');
 
+// Sets up the Express app to handle data parsing //
+const app = express();
+const PORT = process.env.PORT || 3306;
 
-//Tells node that we are creating an express server //
-var app = express();
-// Port definition //
-var PORT = process.env.PORT || 3306;
+// Serving up static assets //
+app.use(express.static('client/build'));
 
 // Standard code for body-parser //
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-
 // ROUTER
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//

@@ -22,22 +22,23 @@ UNIQUE KEY `user_username` (`user_username`)
 CREATE TABLE locations (
 city_id INT AUTO_INCREMENT NOT NULL,
 city_name varchar(45) NOT NULL,
+state_name varchar(45) NOT NULL,
 country_name varchar(45) NOT NULL,
 );
 
 SELECT * FROM locations;
 
-INSERT INTO locations (city_name, country_name)
-VALUES ("Berlin, Germany"),
-	("Hangzhou, China"),
-	("Topeka, USA"),
-	("Tokyo, Japan"),
-	("Bangkok, Thailand"),
-	("Manila, Philippines"),
-	("Paris, France"),
-	("Rome, Italy"),
-	("Los Angeles, USA"),
-	("Amsterdam, Netherlands")
+INSERT INTO locations (city_name, state_name, country_name)
+VALUES ("Berlin, Berlin, Germany"),
+	("Hangzhou, Zhejiang, China"),
+	("Topeka, Kansas, USA"),
+	("Tokyo, Tokyo, Japan"),
+	("Bangkok, Bangkok Metropolitan Region, Thailand"),
+	("Manila, National Capital Region, Philippines"),
+	("Paris, , Ile-de-France, France"),
+	("Rome, Lazio, Italy"),
+	("Los Angeles, California, USA"),
+	("Amsterdam, Noord Holland, Netherlands")
 
 
 
