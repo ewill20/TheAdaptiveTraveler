@@ -1,13 +1,29 @@
 // Here we require the various dependencies //
+var http = require('http');
 const express = require('express');
-const bodyParser = require('body-parser');
 const path = require('path');
 const mysql = require('mysql');
 
 // Sets up the Express app to handle data parsing //
 const app = express();
+var passport = require('passport');
+var session = require('express-session');
+const bodyParser = require('body-parser');
+
+
+// For Passport
+ 
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+
+app.use(passport.initialize());
+
+app.use(passport.session()); // persistent login sessions
 const PORT = process.env.PORT || 3306;
 
+
+app.get('/', function(req, res) {
+  res.sent('Welcome to passport with sequelize')
+});
 // Serving up static assets //
 app.use(express.static('client/build'));
 
@@ -19,10 +35,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // ROUTER
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+// require("./routes/apiRoutes")(app);
+// require("./routes/htmlRoutes")(app);
 // Function to handle requests and responses //
-
+var env = require('dotenv').load();
 function handleRequest (request, response) {
 
 // Statement triggered (client-side) when the port is visited //
