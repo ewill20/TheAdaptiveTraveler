@@ -18,11 +18,20 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
 app.use(passport.initialize());
 
 app.use(passport.session()); // persistent login sessions
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 5000;
 
 
 app.get('/', function(req, res) {
-  res.sent('Welcome to passport with sequelize')
+  res.render(path.join(__dirname, "landing.html"))
+});
+app.get('/about', function(req, res) {
+  res.render(path.join(__dirname, "About.html"))
+});app.get('/contact', function(req, res) {
+  res.render(path.join(__dirname, "Contact.html"))
+});app.get('/index1.2', function(req, res) {
+  res.render(path.join(__dirname, "index1.2"))
+});app.get('/index1.3', function(req, res) {
+  res.render(path.join(__dirname, "index1.3"))
 });
 // Serving up static assets //
 app.use(express.static('client/build'));
@@ -39,6 +48,20 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // require("./routes/htmlRoutes")(app);
 // Function to handle requests and responses //
 var env = require('dotenv').load();
+
+//Models
+var models = require("models");
+ 
+//Sync Database
+models.sequelize.sync().then(function() {
+ 
+    console.log('Nice! Database looks fine')
+ 
+}).catch(function(err) {
+ 
+    console.log(err, "Something went wrong with the Database Update!")
+ 
+});
 function handleRequest (request, response) {
 
 // Statement triggered (client-side) when the port is visited //

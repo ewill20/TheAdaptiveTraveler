@@ -15,30 +15,29 @@ CREATE TABLE user (
 `user_country` varchar(255) DEFAULT NULL,
 PRIMARY KEY (`user_id`),
 UNIQUE KEY `user_email` (`user_email`),
-UNIQUE KEY `user_username` (`user_username`)
+UNIQUE KEY `user_username` (`user_username`)                                                       
 
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1480 ;
 
 CREATE TABLE locations (
 city_id INT AUTO_INCREMENT NOT NULL,
-city_name varchar(45) NOT NULL,
-state_name varchar(45) NOT NULL,
-country_name varchar(45) NOT NULL,
+city_name varchar(50) NOT NULL,
+state_name varchar(50) NOT NULL,
+country_name varchar(50) NOT NULL,
+PRIMARY KEY (`city_id`)
 );
 
-SELECT * FROM locations;
-
-INSERT INTO locations (city_name, state_name, country_name)
-VALUES ("Berlin, Berlin, Germany"),
-	("Hangzhou, Zhejiang, China"),
-	("Topeka, Kansas, USA"),
-	("Tokyo, Tokyo, Japan"),
-	("Bangkok, Bangkok Metropolitan Region, Thailand"),
-	("Manila, National Capital Region, Philippines"),
-	("Paris, , Ile-de-France, France"),
-	("Rome, Lazio, Italy"),
-	("Los Angeles, California, USA"),
-	("Amsterdam, Noord Holland, Netherlands")
+INSERT INTO locations (city_id, city_name, state_name, country_name)
+VALUES 	(001, 'Berlin', 'Berlin', 'Germany'),
+		(002, 'Hangzhou', 'Zhejiang', 'China'),
+		(003, 'Topeka', 'Kansas', 'USA'),
+		(004, 'Tokyo', 'Tokyo', 'Japan'),
+		(005, 'Bangkok', 'Bangkok', 'Thailand'),
+		(006, 'Manila', 'Manila Metropolitan Region', 'Philippines'),
+		(007, 'Paris', 'Ile-de-France', 'France'),
+		(008, 'Rome', 'Lazio', 'Italy'),
+		(009, 'Los Angeles', 'California', 'USA'),
+		(0010, 'Amsterdam', 'North Holland', 'Netherlands')
 
 
 

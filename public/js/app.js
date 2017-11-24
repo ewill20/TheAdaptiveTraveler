@@ -11,13 +11,13 @@ function initMap() {
 };
 // "create profile" button click listener //
 $("#create-profile").on("click", function() {
-	window.location = "index1.3.html";
+	window.location = "/index1.3";
 	console.log("Going to create a new profile");
 });
 
 // "Your Travels" click listener that will redirect user to login page //
 $("#yourTravels").on("click", function() {
-	window.location = "index1.2.html";
+	window.location = "/index1.2";
 	console.log("Going to login page");
 });
 
