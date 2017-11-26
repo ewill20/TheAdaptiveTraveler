@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 
 
 app.get('/', function(req, res) {
-<<<<<<< HEAD
+
   res.send('Welcome')
 =======
   res.render(path.join(__dirname, "landing.html"))
@@ -35,7 +35,7 @@ app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "index1.2"))
 });app.get('/index1.3', function(req, res) {
   res.render(path.join(__dirname, "index1.3"))
->>>>>>> 36a8f438d9bf380500bcd1358d2a707cd4558eca
+
 });
 // Serving up static assets //
 app.use(express.static('client/build'));
@@ -45,7 +45,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-<<<<<<< HEAD
+
 
 // For Passport //
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
@@ -69,7 +69,7 @@ app.get('/', function(req, res){
 
 
     //load passport strategies
-    require('./app/config/passport/passport.js')(passport,models.user);
+    require('./app/config/passport/passport.js')(passport, models.user);
 
 
     //Sync Database

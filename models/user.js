@@ -1,9 +1,11 @@
 // models/user.js
+module.exports = function(sequelize, Sequelize {})
 
-var Sequelize = require("sequelize")
-module.exports = function(db){
-  return db.define("user",{
+var User = sequelize.define('user', {
     username: Sequelize.STRING,
     password: Sequelize.STRING
   })
+
+return User;
+
 }
