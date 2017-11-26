@@ -16,14 +16,13 @@ exports.signin = function(req,res){
 exports.dashboard = function(req,res){
 
 	res.render('dashboard'); 
-	res.redirect('/signin')
 
 }
 
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
-  res.redirect('/signin');
+  res.redirect('/');
   });
 
 }
