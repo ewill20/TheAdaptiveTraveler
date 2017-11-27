@@ -1,21 +1,39 @@
 var exports = module.exports = {}
 
+exports.main = function (req,res) {
 
-exports.signup = function(req,res){
+  res.render('main');
+  
+}
+exports.landing = function(req,res){
 
-	res.render('signup'); 
+	res.render('landing'); 
 
 }
+exports.about = function(req,res) {
 
+  res.render('about');
+
+}
+exports.contact = function(req,res) {
+
+  res.render('contact');
+
+}
+exports.signup = function(req,res){
+  
+    res.render('signup'); 
+  
+}
 exports.signin = function(req,res){
 
 	res.render('signin'); 
 
 }
 
-exports.dashboard = function(req,res){
+exports.profile = function(req,res){
 
-	res.render('dashboard'); 
+	res.render('profile'); 
 
 }
 

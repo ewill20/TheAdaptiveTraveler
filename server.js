@@ -11,6 +11,7 @@ const path = require('path')
 const mysql = require('mysql')
 
 
+
 // For Passport
  
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
@@ -25,16 +26,16 @@ app.get('/', function(req, res) {
 
   res.send('Welcome')
 
-  res.render(path.join(__dirname, "landing.html"))
+  res.render(path.join(__dirname, "landing.hbs"))
 });
 app.get('/about', function(req, res) {
-  res.render(path.join(__dirname, "About.html"))
+  res.render(path.join(__dirname, "about.hbs"))
 });app.get('/contact', function(req, res) {
-  res.render(path.join(__dirname, "Contact.html"))
+  res.render(path.join(__dirname, "contact.hbs"))
 });app.get('/index1.2', function(req, res) {
-  res.render(path.join(__dirname, "index1.2"))
+  res.render(path.join(__dirname, "profile.hbs"))
 });app.get('/index1.3', function(req, res) {
-  res.render(path.join(__dirname, "index1.3"))
+  res.render(path.join(__dirname, "signin.hbs"))
 
 });
 // Serving up static assets //
@@ -89,9 +90,6 @@ app.get('/', function(req, res){
 // require("./routes/htmlRoutes")(app);
 // Function to handle requests and responses //
 var env = require('dotenv').load();
-
-// //Models
-// var models = require("./models");
  
 //Sync Database
 models.sequelize.sync({ force:true }).then(function() {
@@ -109,14 +107,5 @@ app.listen(5000, function(err){
  
 });
 
-// function handleRequest (request, response) {
-
-// // Statement triggered (client-side) when the port is visited //
-
-// response.end("You're Connected!" + request.url);
-// }
-
-// // Node http package to create server //
-// var server = http.createServer(handleRequest);
 
 

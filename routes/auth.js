@@ -2,15 +2,19 @@ var authController = require('../controllers/authcontroller.js');
 
 module.exports = function(app,passport){
 
-app.get('/signup', authController.signup);
+app.get('/landing', authcontroller.landing);
 
+app.get('/about', authcontroller.about);
+
+app.get('/contact', authcontroller.contact);
+
+app.get('/signup', authController.signup);
 
 app.get('/signin', authController.signin);
 
-
 app.post('/signup', passport.authenticate(function(req, res) {
     try {
-        res.redirect('/dashboard');
+        res.redirect('/profile');
     }
     catch (err) {
         console.log(err)
@@ -19,7 +23,7 @@ app.post('/signup', passport.authenticate(function(req, res) {
 }));
 
 
-app.get('/dashboard',isLoggedIn, authController.dashboard);
+app.get('/profile',isLoggedIn, authController.profile);
 
 
 app.get('/logout',authController.logout);
@@ -27,7 +31,7 @@ app.get('/logout',authController.logout);
 
 app.post('/signin', passport.authenticate(function(req, res) { 
     try {
-        res.redirect('/dashboard')
+        res.redirect('/profile')
     }
     catch (err) {
         console.log(err);
