@@ -5,17 +5,54 @@
   <title></title>
 </head>
 <body>
-<form id="signup" name="signup" method="post" action="/signup">
-  <label for="email">Email Address</label>
-  <input class="text" name="email" type="email" />
-  <label for="firstname">Firstname</label>
-  <input name="firstname" type="text" />
-  <label for="lastname">Lastname</label>
-  <input name="lastname" type="text" />
-  <label for="password">Password</label>
-  <input name="password" type="password" />
-  <input class="btn" type="submit" value="Sign Up" />
-</form>
+  
+<div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <h2 class="navbar-brand" href="TheAdaptiveTraveler.html">The Adaptive Traveler</h2>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-4 col-xl-8 col-xl-offset-4">
+                <div class="panel panel-default" id="create-profile-panel">
+                    <div class="panel panel-header text-center" id="create-profile-header">
+                        Create Your Profile
+                    </div>
+                    <div class="panel panel-body text-center" id="profile-panel-body">
+                        <form action="userinfo.sql" role="form" class="create-user">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                <input type="text" class="form-control" id="location" placeholder="Location" required>
+                                <input type="text" class="form-control" id="handle" placeholder="Choose A Handle" required>
+                                <input type="password" class="form-control" id="password1" placeholder="Password" required>
+                                <input type="password" class="form-control" id="password2" placeholder="Confirm Your Password" required>
+                                <label id="profile-photo-label" for="profile-photo">Upload A Profile Photo</label>
+                                <input type="file" name="profile-photo" id="profile-input" accept="image/*">
+                                <button type="button" class="btn btn-default" id="creating-profile">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <footer class="footer">
+            © 2017 The Adaptive Traveler
+            </footer>
 
 </body>
 </html>
