@@ -1,104 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Meta Dependecies -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/tat1.css">
-    <link rel="stylesheet" type="text/javascript" href="../js/tat.js">
-	<title>About</title>
+    <title>The Adaptive Traveler</title>
+
+    <!-- Favicon link -->
+    <link rel="icon" type="image/ico" href="Images/taticon.png">
+    <!-- Material Design Bootstrap -->
+    <link href="../MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/tat.css" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- FontAwesome Icons CDN -->
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script rel="stylesheet" type="text/javascript" src="../js/tat.js"></script>
+
 </head>
-<body>
 
-<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="TheAdaptiveTraveler.html"><img id="tatlogo" alt="the_adaptive_traveler_logo" src="../Images/taticon.png"></a> 
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        				<ul class="nav navbar-nav navbar-right">
-        					<li><a href="#">Portfolio</a></li>
-          					<li><a href="Contact.html">Contact</a></li>
-          					<li><a href="About.html">About</a></li>
-        				</ul>
-					</div>
-			 <form class="navbar-form navbar-inline" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Explore">
-                </div>
-                <button id="submit2" type="submit" class="btn btn-default">Submit</button>
-            </form>
-		</div>
-</nav>
-<div class="container">
-   <div class="row">
-   <div class="col-sm-2 col-md-3 col-lg-2">
-    <div class="dropdown">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">The "Good Good"<span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maps</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hotels</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Which Direction?</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cool Spots</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Photo Locations</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Videos</a></li>
-        </ul>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <h2 class="navbar-brand" href="TheAdaptiveTraveler.html">The Adaptive Traveler</h2>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <div class="dropdown">
-        <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="menu2" data-toggle="dropdown">Caché<span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Off-The-Beaten-Path</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hidden Stuff</a></li>
-    </ul>
-    </div>
-    <div class="dropdown">
-    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="menu3" data-toggle="dropdown">Do What?<span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Family</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Friends</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Couples</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Célibataire</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Group</a></li>
-    </ul>
-    </div>
-    <div class="dropdown">
-    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="menu4" data-toggle="dropdown">Grub<span class="caret"></span></button> 
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu4">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quick Eats</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Romantic</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Family</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Brew Bites</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Snacks</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Healthy</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vegan</a></li>
-    </ul>
-    </div>
-    <div class="dropdown">
-    <button type="button" id="menu5" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">Cultural<span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu5">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Language Phrases</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Customs & Practices</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">History</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Art</a></li>
-    </ul>
-    </div>
-</div>
-<div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="panel-footer fixed-bottom">
-                            <footer style="background-color: #9c9c9c; color: white; border-top: solid #ff5739 2px; text-align: center; padding: 25px 200px 25px 200px;">
-                            © Copyright 2017 The Adaptive Traveler
-                            </footer>
-                        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-8 col-xl-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel panel-header text-center" id="about-header">
+                        About
+                    </div>
+                    <div class="panel panel-body" id="about-body">
+                        <p id="about-us">
+                            The Adaptive Traveler is a website conceived in traveling and the understanding that all cultures are equal but different.
+                        It is our belief that knowledge is power, education fosters acceptance of our many differences, and that despite our differences
+                        across the world we can resist hatred and cultural divisions through a better understanding of one another's way of life.  We have
+                        found that through travel and cultural immersion one can better identify and understand why other cultures function in the way they do.
+                        This website aims to compile information regarding the many facets and barriers of traveling to a foreign destination so that one may not
+                        only immerse themselves better as a tourist or visitor, but also have a richer and more enjoyable experience while abroad.
+                        </p> 
                     </div>
                 </div>
             </div>
+            <footer class="footer">
+                © 2017 The Adaptive Traveler
+            </footer>
 
 
 
 </body>
+
 </html>

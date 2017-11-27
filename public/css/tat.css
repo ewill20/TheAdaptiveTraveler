@@ -58,15 +58,14 @@ body {
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
-    border-top-right-radius: 5px !important;
- 	   
+    border-top-right-radius: 5px !important;   
 }
 input[type="text"]#search-text-input::-webkit-input-placeholder {
 	color: white !important;
 	font-size: 12px !important;
 }
 input {
-	width: 90% !important;
+	/* width: 90% !important; */
 	font-size: 15px !important;
 }
 #username  {
@@ -263,5 +262,41 @@ footer {
 html {
 	position: relative !important;
 	min-height: 100% !important;
+}
+#form8 {
+	width: 100%;
+}
+#contact-form {
+	padding: 0 10px;
+}
+.md-form {
+	margin-left: 0px !important;
+}
+.prefix~textarea {
+	margin-left: 0px !important;
+}
+.prefix~input {
+	margin-left: 0px !important;
+}
+#send-button {
+	margin-bottom: 10px;
+}
+#Contact-Header {
+	font-family: 'Fresca', sans-serif;
+	color: #777;
+	font-size: 20px;
+}
+#about-header {
+	font-family: 'Fresca', sans-serif;
+	color: #777;
+	font-size: 30px;
+}
+#about-us {
+	font-family: 'Fresca', sans-serif;
+	color: #777;
+	font-size: 25px;
+}
+#about-body {
+	margin-bottom: 0px;
 }
 
