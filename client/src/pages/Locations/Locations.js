@@ -4,13 +4,15 @@ import API from "../../components/API";
 import { Link } from "react-router-dom";
 
 
-class Locations extends Component {
-	state = {
+export default class Locations extends Component {
+	constructor () {
+		super() 
+		this.state = {
 		locations: [],
 		city: "",
 		state: "",
 		country: "",
-	};
+	}}
 
 	componentDidMount() {
 		this.loadLocations();
@@ -46,9 +48,7 @@ class Locations extends Component {
 
 	render() {
 		return (
-			<Container fluid>
-				<Row>
-					<Col size=""
+			<div/>
 			)
 	}
 }

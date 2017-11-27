@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 5000;
 app.get('/', function(req, res) {
 
   res.send('Welcome')
-=======
+
   res.render(path.join(__dirname, "landing.html"))
 });
 app.get('/about', function(req, res) {
@@ -53,7 +53,7 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.use(passport.session()); // persistent login sessions
 
 //For Handlebars
-    app.set('views', './app/views')
+    app.set('views', './views')
     app.engine('hbs', exphbs({extname: '.hbs'}));
     app.set('view engine', '.hbs');
 
@@ -62,33 +62,26 @@ app.get('/', function(req, res){
 	});
 
 //Models
-    var models = require("./app/models");
+    var models = require("./models");
 
 //Routes
-    var authRoute = require('./app/routes/auth.js')(app,passport);
+    var authRoute = require('./routes/auth.js')(app,passport);
 
 
     //load passport strategies
-    require('./app/config/passport/passport.js')(passport, models.user);
+    require('./config/passport/passport.js')(passport, models.user);
 
 
     //Sync Database
-   	models.sequelize.sync().then(function(){
-    console.log('Nice! Database looks fine')
+   	// models.sequelize.sync().then(function(){
+    // console.log('Nice! Database looks fine')
 
-    }).catch(function(err){
-    console.log(err,"Something went wrong with the Database Update!")
-    });
+    // }).catch(function(err){
+    // console.log(err,"Something went wrong with the Database Update!")
+    // });
 
 
 
-	app.listen(5000, function(err){
-		if(!err)
-		console.log("Site is live"); else console.log(err)
-
-	});
-
-=======
 // ROUTER
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//
@@ -97,28 +90,33 @@ app.get('/', function(req, res){
 // Function to handle requests and responses //
 var env = require('dotenv').load();
 
-//Models
-var models = require("./models");
+// //Models
+// var models = require("./models");
  
 //Sync Database
-models.sequelize.sync().then(function() {
- 
-    console.log('Nice! Database looks fine')
+models.sequelize.sync({ force:true }).then(function() {
+
+app.listen(5000, function(err){
+    if(!err)
+    console.log("Site is live"); else console.log(err)
+  console.log('Nice! Database looks fine')
+  }); 
+    
  
 }).catch(function(err) {
  
     console.log(err, "Something went wrong with the Database Update!")
  
 });
->>>>>>> 36a8f438d9bf380500bcd1358d2a707cd4558eca
-function handleRequest (request, response) {
 
-// Statement triggered (client-side) when the port is visited //
+// function handleRequest (request, response) {
 
-response.end("You're Connected!" + request.url);
-}
+// // Statement triggered (client-side) when the port is visited //
 
-// Node http package to create server //
-var server = http.createServer(handleRequest);
+// response.end("You're Connected!" + request.url);
+// }
+
+// // Node http package to create server //
+// var server = http.createServer(handleRequest);
 
 

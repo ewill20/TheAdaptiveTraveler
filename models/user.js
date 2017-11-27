@@ -1,5 +1,5 @@
 // models/user.js
-module.exports = function(sequelize, Sequelize {})
+module.exports = function(sequelize, Sequelize) {
 
 var User = sequelize.define('user', {
     username: Sequelize.STRING,

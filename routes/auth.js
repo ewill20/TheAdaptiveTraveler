@@ -8,9 +8,15 @@ app.get('/signup', authController.signup);
 app.get('/signin', authController.signin);
 
 
-app.post('/signup', passport.authenticate('local-signup',  { successRedirect: '/dashboard',
-                                                    failureRedirect: '/signup'}
-                                                    ));
+app.post('/signup', passport.authenticate(function(req, res) {
+    try {
+        res.redirect('/dashboard');
+    }
+    catch (err) {
+        console.log(err)
+        res.redirect('/signup')
+    }
+}));
 
 
 app.get('/dashboard',isLoggedIn, authController.dashboard);
@@ -19,9 +25,15 @@ app.get('/dashboard',isLoggedIn, authController.dashboard);
 app.get('/logout',authController.logout);
 
 
-app.post('/signin', passport.authenticate('local-signin',  { successRedirect: '/dashboard',
-                                                    failureRedirect: '/signin'}
-                                                    ));
+app.post('/signin', passport.authenticate(function(req, res) { 
+    try {
+        res.redirect('/dashboard')
+    }
+    catch (err) {
+        console.log(err);
+        res.redirect('/signin');
+    }
+}));
 
 
 function isLoggedIn(req, res, next) {
@@ -33,9 +45,3 @@ function isLoggedIn(req, res, next) {
 
 
 }
-
-
-
-
-
-
