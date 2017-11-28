@@ -39,7 +39,7 @@ app.get('/about', function(req, res) {
 
 });
 // Serving up static assets //
-app.use(express.static('client/build'));
+app.use(express.static('public'));
 
 // Standard code for body-parser //
 app.use(bodyParser.json());
@@ -54,11 +54,13 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.use(passport.session()); // persistent login sessions
 
 //For Handlebars
-    app.set('views', './views')
-    app.engine('hbs', exphbs({extname: '.hbs'}));
+    app.set('views', './views');
+    app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: "main" }));
     app.set('view engine', '.hbs');
 
-app.get('/', function(req, res){
+
+
+  app.get('/', function(req, res){
 	  res.send('Welcome');
 	});
 
@@ -71,16 +73,6 @@ app.get('/', function(req, res){
 
     //load passport strategies
     require('./config/passport/passport.js')(passport, models.user);
-
-
-    //Sync Database
-   	// models.sequelize.sync().then(function(){
-    // console.log('Nice! Database looks fine')
-
-    // }).catch(function(err){
-    // console.log(err,"Something went wrong with the Database Update!")
-    // });
-
 
 
 // ROUTER
