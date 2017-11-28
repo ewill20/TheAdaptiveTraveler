@@ -1,3 +1,8 @@
+// var express = require('express');
+
+// var router = express.Router();
+
+// var db = require("../models");
 var exports = module.exports = {}
 
 exports.main = function (req,res) {

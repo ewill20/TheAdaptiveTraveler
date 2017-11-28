@@ -59,7 +59,7 @@ $("#login-button").on("click", function() {
 	} else if($('#password').val() == '') {
 		alert("Please enter a valid password");
 		return false;
-	} else(window.location = "profile.html");
+	} else(window.location = "profile.hbs");
 		console.log("login successful");
 		return true;
 });
@@ -87,7 +87,7 @@ $("#creating-profile").on("click", function() {
 	} else if(pass1 != pass2) {
 		alert("Your Password In Both Fields Must Match");
 		ok = false;
-	} else(window.location = "profile.html");
+	} else(window.location = "profile.hbs");
 		alert("You Have Successfully Created A Profile!");
 		return ok;
 		console.log("profile successfully created");
