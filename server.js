@@ -13,7 +13,8 @@ const mysql = require('mysql')
 const PORT = process.env.PORT || 5000;
 
 // Serving up static assets //
-app.use(express.static('public'));
+//app.use(express.static('client/build'));
+app.use(express.static("public"));
 
 // Standard code for body-parser //
 app.use(bodyParser.json());
@@ -28,13 +29,13 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.use(passport.session()); // persistent login sessions
 
 //For Handlebars
-    app.set('views', './views');
-    app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: "main" }));
+    app.set('main', '/views/main')
+    app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
     app.set('view engine', '.hbs');
 
-  app.get('/', function(req, res){
-	res.send('Welcome');
-});
+app.get('/', function(req, res){
+    res.send('Welcome');
+  });
 
 //Models
     var models = require("./models");
@@ -47,17 +48,45 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     require('./config/passport/passport.js')(passport, models.user);
 
 
-  // For Passport
+// For Passport
  
-  app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
- 
-  app.use(passport.initialize());
- 
-  app.use(passport.session()); // persistent login sessions
- 
- 
- 
-  app.get('/', function(req, res) {
+//app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+
+//app.use(passport.initialize());
+
+//app.use(passport.session()); // persistent login sessions
+
+
+
+app.get('/', function(req, res) {
+
+  res.send('Welcome')
+
+  res.render(path.join(__dirname, "landing.hbs"))
+});
+app.get('/about', function(req, res) {
+  res.render(path.join(__dirname, "about.hbs"))
+});app.get('/contact', function(req, res) {
+  res.render(path.join(__dirname, "contact.hbs"))
+});app.get('/index1.2', function(req, res) {
+  res.render(path.join(__dirname, "profile.hbs"))
+});app.get('/index1.3', function(req, res) {
+  res.render(path.join(__dirname, "signin.hbs"))
+
+});
+
+
+
+    //Sync Database
+   	// models.sequelize.sync().then(function(){
+    // console.log('Nice! Database looks fine')
+
+    // }).catch(function(err){
+    // console.log(err,"Something went wrong with the Database Update!")
+    // });
+
+
+
 // ROUTER
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//
@@ -81,6 +110,3 @@ app.listen(5000, function(err){
     console.log(err, "Something went wrong with the Database Update!")
  
 });
-
-
-  })

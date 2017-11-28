@@ -12,16 +12,6 @@ app.get('/signup', authController.signup);
 
 app.get('/signin', authController.signin);
 
-app.post('/signin', passport.authenticate(function(req,res) {
-    try {
-        res.redirect('/profile');
-    }
-    catch (err) {
-        console.log(err)
-        res.redirect('/signup')
-    }
-}));
-
 app.post('/signup', passport.authenticate(function(req, res) {
     try {
         res.redirect('/profile');
