@@ -10,34 +10,9 @@ var exphbs = require('express-handlebars')
 const path = require('path')
 const mysql = require('mysql')
 
-
-
-// For Passport
- 
-app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
-
-app.use(passport.initialize());
-
-app.use(passport.session()); // persistent login sessions
 const PORT = process.env.PORT || 5000;
 
 
-app.get('/', function(req, res) {
-
-  res.send('Welcome')
-
-  res.render(path.join(__dirname, "landing.hbs"))
-});
-app.get('/about', function(req, res) {
-  res.render(path.join(__dirname, "about.hbs"))
-});app.get('/contact', function(req, res) {
-  res.render(path.join(__dirname, "contact.hbs"))
-});app.get('/index1.2', function(req, res) {
-  res.render(path.join(__dirname, "profile.hbs"))
-});app.get('/index1.3', function(req, res) {
-  res.render(path.join(__dirname, "signin.hbs"))
-
-});
 // Serving up static assets //
 app.use(express.static('public'));
 
@@ -58,11 +33,9 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: "main" }));
     app.set('view engine', '.hbs');
 
-
-
   app.get('/', function(req, res){
-	  res.send('Welcome');
-	});
+	res.send('Welcome');
+});
 
 //Models
     var models = require("./models");
@@ -75,6 +48,17 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     require('./config/passport/passport.js')(passport, models.user);
 
 
+  // For Passport
+ 
+  app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+ 
+  app.use(passport.initialize());
+ 
+  app.use(passport.session()); // persistent login sessions
+ 
+ 
+ 
+  app.get('/', function(req, res) {
 // ROUTER
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//
