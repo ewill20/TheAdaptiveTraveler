@@ -29,7 +29,7 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.use(passport.session()); // persistent login sessions
 
 //For Handlebars
-    app.set('main', '/views/main')
+    app.set('views', './views');
     app.engine('hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
     app.set('view engine', '.hbs');
 
@@ -68,11 +68,12 @@ app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "about.hbs"))
 });app.get('/contact', function(req, res) {
   res.render(path.join(__dirname, "contact.hbs"))
-});app.get('/index1.2', function(req, res) {
-  res.render(path.join(__dirname, "profile.hbs"))
-});app.get('/index1.3', function(req, res) {
+});app.get('/signin', function(req, res) {
   res.render(path.join(__dirname, "signin.hbs"))
-
+});app.get('/signup', function(req, res) {
+  res.render(path.join(__dirname, "signup.hbs"))
+});app.get('/profile', function(req,res) {
+  res.render(path.join(__dirname, "profile.hbs"))
 });
 
 

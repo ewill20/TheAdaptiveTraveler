@@ -120,7 +120,7 @@ input {
 #create-profile-panel {
 	width: 350px;
 	margin-bottom: 200px;
-	text-align: center;
+	/* text-align: center; */
 
 }
 #create-profile-header {
@@ -130,6 +130,7 @@ input {
 }
 #creating-profile {
 	margin-top: 30px;
+	margin-left: 34%;
 }
 #profile-panel-body {
 	margin-bottom: 0;
@@ -157,6 +158,24 @@ input {
 }
 #wish-list-body, #your-travels-body {
 	margin-bottom: 0;	
+}
+#name {
+	padding-left: 30px;
+}
+#email {
+	padding-left: 30px;
+}
+#location {
+	padding-left: 30px;
+}
+#handle {
+	padding-left: 30px;
+}
+#password1 {
+	padding-left: 30px;
+}
+#password2 {
+	padding-left: 30px;
 }
 .navbar-nav>a.profile-image {
     padding-top: 10px !important;

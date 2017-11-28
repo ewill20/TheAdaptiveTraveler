@@ -11,13 +11,13 @@ function initMap() {
 };
 // "create profile" button click listener //
 $("#create-profile").on("click", function() {
-	window.location = "/index1.3";
+	window.location = "/signup";
 	console.log("Going to create a new profile");
 });
 
 // "Your Travels" click listener that will redirect user to login page //
 $("#yourTravels").on("click", function() {
-	window.location = "/index1.2";
+	window.location = "/signin";
 	console.log("Going to login page");
 });
 
@@ -97,12 +97,12 @@ $("#creating-profile").on("click", function() {
 // click listener and event handler for 'sign out' link //
 $('#sign-out').on('click', function() {
 	alert('You have been signed out');
-	window.location = 'landing.html';
+	window.location = 'landing.hbs';
 });
 
 // click listener and event handler for 'account' link //
 $('#account-link').on('click', function() {
-	window.location = 'profile.html'
+	window.location = 'profile.hbs'
 })
 
 
