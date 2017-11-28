@@ -12,7 +12,6 @@ const mysql = require('mysql')
 
 const PORT = process.env.PORT || 5000;
 
-
 // Serving up static assets //
 app.use(express.static('public'));
 
@@ -84,4 +83,4 @@ app.listen(5000, function(err){
 });
 
 
-
+  })
