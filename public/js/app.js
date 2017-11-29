@@ -87,11 +87,32 @@ $("#creating-profile").on("click", function() {
 	} else if(pass1 != pass2) {
 		alert("Your Password In Both Fields Must Match");
 		ok = false;
-	} else(window.location = "profile.hbs");
-		alert("You Have Successfully Created A Profile!");
-		return ok;
-		console.log("profile successfully created");
-		$("input").empty();
+	} else {
+		var photo = null
+		if ($("#profile-input").val()) {
+			photo = $("#profile-input").val()
+		} else {photo = null}
+		
+		var newUserObj = {
+			name: $("#name").val().trim(),
+			email: $("#email").val().trim(),
+			location: $("#location").val().trim(),
+			handle: $("#handle").val().trim(),
+			password: pass1,
+			photo: photo
+		}
+		$.ajax("/api/user", {
+			type: "POST",
+			data: newUserObj
+		}).then(
+			function() {
+				alert("You Have Successfully Created A Profile!");
+				console.log("profile successfully created");
+				$("#input").empty();
+			}
+		);
+		
+	}
 });
 
 // click listener and event handler for 'sign out' link //

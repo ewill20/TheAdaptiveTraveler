@@ -13,7 +13,7 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the todos
-  app.get("/api/users", function(req, res) {
+  app.get("/api/user", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.User.findAll({}).then(function(dbUser) {
       // We have access to the todos as an argument inside of the callback function
@@ -27,8 +27,8 @@ module.exports = function(app) {
     // insert into our table. In this case we just we pass in an object with a text
     // and complete property
     db.User.create({
-      text: req.body.text,
-      complete: req.body.complete
+      handle: req.body.handle,
+      password: req.body.password
     }).then(function(dbUser) {
       // We have access to the new todo as an argument inside of the callback function
       res.json(dbUser);
@@ -54,8 +54,8 @@ module.exports = function(app) {
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
     db.User.update({
-      text: req.body.text,
-      complete: req.body.complete
+      handle: req.body.handle,
+      password: req.body.password
     }, {
       where: {
         id: req.body.id
