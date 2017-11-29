@@ -33,7 +33,7 @@ $("#letsgo").on("click", function() {
 
 		$.ajax({
 			type: "POST",
-			url: "userinfo.sql",
+			url: "../",
 			data: data,
 			beforeSend: function(html) { // this happens before actual call
                     $("#results").html(''); 
