@@ -68,17 +68,15 @@ input {
 	/* width: 90% !important; */
 	font-size: 15px !important;
 }
-#username  {
-	width: 100px !important;
-	padding-left: 33.3% !important;
+#username {
+	margin-bottom: 10px;
 }
 #password {
-	width: 100px !important;
-	padding-left: 33.3% !important;
 	margin-right: 0 !important;
+	margin-bottom: 20px;
 }
 #login-button {
-	margin-left: 19% !important;
+	margin-left: 34% !important;
 	width: 100px !important;
 }
 .navbar {
@@ -139,7 +137,7 @@ input {
 	margin-bottom: 0 !important;
 	margin-left: 5px;
 	margin-right: 5px;
-	width: 200px;
+	width: 400px;
 	height: 175px !important;
 	border: none !important;
 	align-content: center !important;

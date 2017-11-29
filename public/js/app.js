@@ -59,7 +59,7 @@ $("#login-button").on("click", function() {
 	} else if($('#password').val() == '') {
 		alert("Please enter a valid password");
 		return false;
-	} else(window.location = "profile.hbs");
+	} else(window.location = "/profile");
 		console.log("login successful");
 		return true;
 });
@@ -97,12 +97,12 @@ $("#creating-profile").on("click", function() {
 // click listener and event handler for 'sign out' link //
 $('#sign-out').on('click', function() {
 	alert('You have been signed out');
-	window.location = 'landing.hbs';
+	window.location = '/landing';
 });
 
 // click listener and event handler for 'account' link //
 $('#account-link').on('click', function() {
-	window.location = 'profile.hbs'
+	window.location = '/profile'
 })
 
 
