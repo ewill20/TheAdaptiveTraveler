@@ -1,7 +1,8 @@
-module.exports = function(sequeize, DataTypes) {
-	var locations = sequeize.define('locations', {
-		text: DataTypes.STRING,
-		complete: DataTypes.BOOLEAN
+module.exports = function(sequelize, DataTypes) {
+	var Locations = sequelize.define('Locations', {
+		city: DataTypes.STRING,
+		state: DataTypes.STRING,
+		country: DataTypes.STRING
 	});
-	return locations;
+	return Locations;
 };
