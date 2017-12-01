@@ -343,6 +343,7 @@ html {
 	border: 1px solid #888;
 	width: 60%;
 	height: 400px;
+	display: block;
 }
 
 .close {
