@@ -51,18 +51,18 @@ $("#letsgo").on("click", function() {
 
 
 // "login" button click listener, this also validates whether or not both input fields have something entered //
-$("#login-button").on("click", function() {
-	if($('#username').val() == '') {
-		alert("Please enter a valid username");
-		return false;
+// $("#login-button").on("click", function() {
+// 	if($('#username').val() == '') {
+// 		alert("Please enter a valid username");
+// 		return false;
 
-	} else if($('#password').val() == '') {
-		alert("Please enter a valid password");
-		return false;
-	} else(window.location = "/profile");
-		console.log("login successful");
-		return true;
-});
+// 	} else if($('#password').val() == '') {
+// 		alert("Please enter a valid password");
+// 		return false;
+// 	} else(window.location = "/profile");
+// 		console.log("login successful");
+// 		return true;
+// });
 
 // click listener for submit button when creating a new profile //
 $("#creating-profile").on("click", function() {
