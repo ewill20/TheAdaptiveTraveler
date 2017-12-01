@@ -41,7 +41,7 @@ exports.profile = function(req,res){
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
-  res.redirect('/');
+  res.redirect('/landing');
   });
 
 }
