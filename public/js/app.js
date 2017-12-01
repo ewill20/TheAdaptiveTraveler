@@ -16,10 +16,10 @@ $("#create-profile").on("click", function() {
 });
 
 // "Your Travels" click listener that will redirect user to login page //
-$("#yourTravels").on("click", function() {
-	window.location = "/signin";
-	console.log("Going to login page");
-});
+// $("#yourTravels").on("click", function() {
+// 	window.location = "/signin";
+// 	console.log("Going to login page");
+// });
 
 // "Let's Go" click listener and search event handler //
 $("#letsgo").on("click", function() {
