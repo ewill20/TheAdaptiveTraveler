@@ -44,7 +44,7 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.set('view engine', '.hbs');
 
 app.get('/', function(req, res){
-    res.send('Welcome');
+    res.sendFile(path.join(__dirname + "/views/landing");
   });
 
 //Models
