@@ -44,7 +44,7 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
     app.set('view engine', '.hbs');
 
 app.get('/', function(req, res){
-    res.send("landing.hbs");
+    res.send("/landing");
   });
 
 //Models
