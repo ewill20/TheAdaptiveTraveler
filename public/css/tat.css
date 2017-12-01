@@ -318,7 +318,7 @@ html {
 }
 #twain {
 	font-family: 'Fresca', sans-serif;
-	color: #777;
+	color: rgb(70, 70, 70);
 	font-size: 25px;
 	font-style: italic;
 }
