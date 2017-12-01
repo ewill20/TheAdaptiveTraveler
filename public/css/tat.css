@@ -316,4 +316,10 @@ html {
 #about-body {
 	margin-bottom: 0px;
 }
+#twain {
+	font-family: 'Fresca', sans-serif;
+	color: #777;
+	font-size: 25px;
+	font-style: italic;
+}
 
