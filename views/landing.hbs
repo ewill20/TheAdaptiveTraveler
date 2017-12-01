@@ -34,7 +34,36 @@
         </div>
         <div class="row secondary">
             <div id="your-travels" class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-4">
-                <button class="btn btn-default" id="yourTravels" type="button">Your Travels</button>
+                <!-- Button to open modal login form -->
+                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels" type="button">Your Travels</button>
+
+            <!-- The Modal -->
+            <div id="login-window" class="modal">
+                <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="../public/images/default-avatar.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container-fluid">
+                    <label><b>Handle</b></label>
+                    <input type="text" placeholder="Enter Handle" name="handle" required>
+
+                    <label><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember Me
+                </div>
+
+                <div class="container-fluid" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#"> Password?</a></span>
+                </div>
+                </form>
+            </div>
             </div>
         </div>
         <div class="row tertiary">
