@@ -13,13 +13,20 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the users
-  app.get("/landing", function(req, res) {
-    // findAll returns all entries for a table when used with no options
-    db.User.findAll({}).then(function(dbUser) {
-      // We have access to the todos as an argument inside of the callback function
-      res.json(dbUser);
+  app.get("/", function(req, res) {
+    result.sendFile(path.join(__dirname + "/../views"));
+      console.log("Loading Landing Page");
     });
+  // GET route for landing page
+  app.get("/landing", function(req, res) {
+    result.sendFile(path.join(__dirname + "/../landing.hbs"))
   });
+  //   // findAll returns all entries for a table when used with no options
+  //   db.User.findAll({}).then(function(dbUser) {
+  //     // We have access to the todos as an argument inside of the callback function
+  //     res.json(dbUser);
+  //   });
+  // });
 
   // POST route for saving a new user
   app.post("/api/user", function(req, res) {
