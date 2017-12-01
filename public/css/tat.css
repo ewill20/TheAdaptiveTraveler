@@ -341,7 +341,8 @@ html {
 	background-color: #fefefe;
 	margin: 5px auto;
 	border: 1px solid #888;
-	width: 80%
+	width: 60%;
+	height: 400px;
 }
 
 .close {
@@ -368,4 +369,7 @@ close:focus {
 	from {-webkit-transform: scale(0)}
 	to {transform: scale(1)}
 }
+/* #login-form-window {
+	height: 400px;
+} */
 
