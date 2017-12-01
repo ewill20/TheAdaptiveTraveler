@@ -13,7 +13,7 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the users
-  app.get("/api/user", function(req, res) {
+  app.get("/landing", function(req, res) {
     // findAll returns all entries for a table when used with no options
     db.User.findAll({}).then(function(dbUser) {
       // We have access to the todos as an argument inside of the callback function
@@ -33,7 +33,7 @@ module.exports = function(app) {
       handle: req.body.handle,
       password: req.body.password
     }).then(function(dbUser) {
-      // We have access to the new todo as an argument inside of the callback function
+      // We have access to the new user as an argument inside of the callback function
       res.json(dbUser);
     });
   });
