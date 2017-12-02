@@ -46,7 +46,8 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
 app.get('/', function(req, res){
     res.render("landing");
   });
-app.get('/profile', function(req, res) {
+app.get('/profile/:id', function(req, res) {
+  console.log(req.params.id);
   res.render('profile')
 });
 
