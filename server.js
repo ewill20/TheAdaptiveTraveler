@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 // Serving up static assets //
 app.use(express.static("public"));
-app.use(express.static('MDB'));
+
 
 // Standard code for body-parser //
 app.use(bodyParser.json());
