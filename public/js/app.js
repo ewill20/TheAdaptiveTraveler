@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	console.log("The document is ready and raring to go!");
 });
-var db = require('../../models');
+
 
 function initMap() {
 	// Create a map object and specify the DOM element for display //
