@@ -25,6 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 // Serving up static assets //
 app.use(express.static("public"));
+app.use(express.static('MDB'));
 
 // Standard code for body-parser //
 app.use(bodyParser.json());
@@ -48,7 +49,11 @@ app.get('/', function(req, res){
   });
 app.get('/profile/:id', function(req, res) {
   console.log(req.params.id);
-  res.render('profile')
+  res.render('profile', {
+    user: {
+      email: "test"
+    }
+  })
 });
 
 //Models
