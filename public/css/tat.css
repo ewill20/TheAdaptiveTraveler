@@ -373,4 +373,7 @@ close:focus {
 /* #login-form-window {
 	height: 400px;
 } */
-
+#login-avatar {
+	height: 100px;
+	width: 100px;
+}
