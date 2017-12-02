@@ -106,15 +106,14 @@ $("#creating-profile").on("click", function() {
 			type: "POST",
 			data: newUserObj
 		}).then(
-			function() {
+			function(newUser) {
 				alert("You Have Successfully Created A Profile!");
-				console.log("profile successfully created");
+				console.log(newUser);
 				$("#input").empty();
-				return res.render('profile.hbs', {
-					user: newUserObj
-				})
-			
+				// window.location = ("/profile");
+				// return newUserObj;
 			}
+			
 		);
 		
 	}
