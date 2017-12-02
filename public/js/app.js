@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	console.log("The document is ready and raring to go!");
 });
+var db = require('../../models');
 
 function initMap() {
 	// Create a map object and specify the DOM element for display //
@@ -109,9 +110,9 @@ $("#creating-profile").on("click", function() {
 				alert("You Have Successfully Created A Profile!");
 				console.log("profile successfully created");
 				$("#input").empty();
-			return res.render('profile.hbs', {
-				user: newUserObj
-			})
+				return res.render('profile.hbs', {
+					user: newUserObj
+				})
 			
 			}
 		);
