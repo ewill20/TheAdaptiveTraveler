@@ -46,6 +46,9 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
 app.get('/', function(req, res){
     res.render("landing");
   });
+app.get('/profile', function(req, res) {
+  res.render('profile')
+});
 
 //Models
     var models = require("./models");
