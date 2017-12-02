@@ -366,13 +366,15 @@ close:focus {
 	animation: animatezoom 0.6s
 }
 
-@keyframes animatezoom {
+@-webkit-keyframes animatezoom {
 	from {-webkit-transform: scale(0)}
 	to {transform: scale(1)}
 }
-/* #login-form-window {
-	height: 400px;
-} */
+@keyframes animatezoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
 #login-avatar {
 	height: 100px;
 	width: 100px;
