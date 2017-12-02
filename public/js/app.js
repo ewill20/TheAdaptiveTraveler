@@ -109,6 +109,9 @@ $("#creating-profile").on("click", function() {
 				alert("You Have Successfully Created A Profile!");
 				console.log("profile successfully created");
 				$("#input").empty();
+			res.render('profile.hbs', {
+				user: newUserObj
+			})
 			}
 		);
 		
