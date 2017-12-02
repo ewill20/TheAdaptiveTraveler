@@ -378,5 +378,8 @@ close:focus {
 #login-avatar {
 	height: 200px;
 	width: 200px;
-	margin-left: 34%;
+	margin: 10px 34%;
+}
+#window {
+	text-align: center;
 }
