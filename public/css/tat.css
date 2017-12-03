@@ -2,7 +2,12 @@ body {
 	background-image: url("../Images/CNZhangjiajie6.jpg") !important; 
 	background-size: cover !important;
 	width: 100%;
-	height: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#content {
+	flex: 1 0 auto;
 }
 
 /*.form-control {
@@ -80,7 +85,7 @@ input {
 	width: 100px !important;
 }
 .navbar {
-	height: 60px;
+	height: 100px;
 	position: fixed;
 	margin-bottom: 20px;
 	z-index: 1;
