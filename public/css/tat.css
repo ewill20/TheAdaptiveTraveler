@@ -68,6 +68,7 @@ body {
 input[type="text"]#search-text-input::-webkit-input-placeholder {
 	color: white !important;
 	font-size: 12px !important;
+	width: auto;
 }
 input {
 	/* width: 90% !important; */
