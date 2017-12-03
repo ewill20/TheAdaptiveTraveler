@@ -34,8 +34,12 @@ body {
 .tertiary {
 	height: 100px !important;
 }
-.explore {
+#explore {
 	margin-right: 10px !important;
+	width: auto;
+	color: white;
+	padding-bottom: 2px;
+	margin-top: 10px;
 }
 #signup-col {
 	padding-left: 0 !important;
@@ -65,12 +69,14 @@ body {
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;   
 }
-input[type="text"]#search-text-input::-webkit-input-placeholder {
+input[type="text"]#explore::-webkit-input-placeholder {
 	color: white !important;
-	font-size: 12px !important;
+	font-size: 18px !important;
 	width: auto;
+	text-align: center;
+	padding-bottom: 0px;
 }
-input {
+input { 
 	/* width: 90% !important; */
 	font-size: 15px !important;
 }
@@ -389,3 +395,4 @@ close:focus {
 #window {
 	text-align: center;
 }
+
