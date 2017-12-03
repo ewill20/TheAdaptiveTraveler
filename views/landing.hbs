@@ -1,3 +1,4 @@
+<div id="content">
 <div class="container-fluid">
         <nav class="navbar navbar-default">
             <div class="navbar-header">
@@ -44,26 +45,28 @@
                 <!-- Modal Content -->
                 <form class="modal-content animate" id="login-form-window" action="./profile/:id">
                 <div class="imgcontainer">
-                    <img src="Images/default-avatar.png" alt="Avatar" class="avatar" id="login-avatar">
+                    <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
                 </div>
 
                 <div class="container-fluid" id="window">
-                    <label><b>Handle</b></label>
+                    <label id="handle-label"><b>Handle</b></label>
                     <br />
-                    <input type="text" placeholder="Enter Handle" name="handle" required>
-
-                    <label><b>Password</b></label>
-                    <br />
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input id="login-handle" type="text" placeholder="Enter Handle" name="handle" required>
                     
-                    <button type="submit">Login</button>
+                    <label id="password-label"><b>Password</b></label>
                     <br />
-                    <input type="checkbox" checked="checked"> Remember Me
+                    <input id="login-password" type="password" placeholder="Enter Password" name="psw" required>
+                    <br />
+                    <button class="btn btn-default" type="submit">Login</button>
+                    <br />
+                    <div id="checkbox">
+                    <input type="checkbox" checked="checked">    Remember Me
+                    </div>
                 </div>
 
-                <div class="container-fluid" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#"> Password?</a></span>
+                <div class="container-fluid text-center" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn">Cancel</button>
+                    <span class="psw"><a href="#">Forgot Password?</a></span>
                 </div>
                 </form>
             </div>
@@ -75,6 +78,7 @@
             </div>
         </div>
     </div>
+</div>    
     <footer class="footer">
         © 2017 The Adaptive Traveler
     </footer>
