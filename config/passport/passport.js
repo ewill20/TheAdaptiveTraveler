@@ -30,30 +30,30 @@
   passport.use('local-signup', new LocalStrategy(
 
     {           
-      usernameField : 'email',
-      passwordField : 'password',
+      usernameField : 'handle',
+      passwordField : 'psw',
       passReqToCallback : true // allows us to pass back the entire request to the callback
     },
 
-    function(req, email, password, done){
+    function(req, handle, psw, done){
        
 
-      var generateHash = function(password) {
-      return bCrypt.hashSync(password, bCrypt.genSaltSync(8), null);
+      var generateHash = function(psw) {
+      return bCrypt.hashSync(psw, bCrypt.genSaltSync(8), null);
       };
 
-       User.findOne({where: {email:email}}).then(function(user){
+       User.findOne({where: {handle:handle}}).then(function(user){
 
       if(user)
       {
-        return done(null, false, {message : 'That email is already taken'} );
+        return done(null, false, {message : 'That handle is already taken'} );
       }
 
       else
       {
-        var userPassword = generateHash(password);
+        var userPassword = generateHash(psw);
         var data =
-        { email:email,
+        { handle:handle,
         password:userPassword,
         firstname: req.body.firstname,
         lastname: req.body.lastname
@@ -91,26 +91,26 @@
   {
 
   // by default, local strategy uses username and password, we will override with email
-  usernameField : 'email',
-  passwordField : 'password',
+  usernameField : 'handle',
+  passwordField : 'psw',
   passReqToCallback : true // allows us to pass back the entire request to the callback
   },
 
-  function(req, email, password, done) {
+  function(req, handle, psw, done) {
 
     var User = user;
 
-    var isValidPassword = function(userpass,password){
-      return bCrypt.compareSync(password, userpass);
+    var isValidPassword = function(userpass,psw){
+      return bCrypt.compareSync(psw, userpass);
     }
 
-    User.findOne({ where : { email: email}}).then(function (user) {
+    User.findOne({ where : { handle:handle}}).then(function (user) {
 
       if (!user) {
-        return done(null, false, { message: 'Email does not exist' });
+        return done(null, false, { message: 'Handle does not exist' });
       }
 
-      if (!isValidPassword(user.password,password)) {
+      if (!isValidPassword(user.psw,psw)) {
 
         return done(null, false, { message: 'Incorrect password.' });
 
