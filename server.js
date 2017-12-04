@@ -51,9 +51,11 @@ app.get('/profile', function(req, res) {
   console.log(req.params.id);
   res.render('profile', {
     user: {
-      name: "Joe Blow",
-      email: "test"
-
+      profilePicture: url("/Images/default-avatar.png"),
+      handle: "",
+      name: "",
+      email: "",
+      location: ""
     }
   })
 });

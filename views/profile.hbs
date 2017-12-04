@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="dropdown nav navbar-nav navbar-right" id="profile-dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="http://placehold.it/30x30" class="profile-image img-circle"> Username <b class="caret"></b></a>
+                    <img src="http://placehold.it/30x30" class="profile-image img-circle"> {{user.name}} <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     <li><a id="account-link"><i class="fa fa-cog"></i> Account</a></li>
                     <li class="divider"></li>
@@ -34,8 +34,7 @@
                         Your Travels
                     </div>
                     <div class="panel panel-body" id="your-travels-body">
-                        {{user.email}}
-                        {{user.name}}
+                        
                     </div>
                 </div>
             </div>
