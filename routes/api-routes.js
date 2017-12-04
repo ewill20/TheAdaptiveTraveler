@@ -58,7 +58,7 @@ app.get('/landing', function(req, res) {
 
   });
 
-  // PUT route for updating user. We can get the updated todo data from req.body
+  // PUT route for updating user. We can get the updated user data from req.body
   app.put("/api/users", function(req, res) {
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
@@ -74,6 +74,11 @@ app.get('/landing', function(req, res) {
       }
     }).then(function(dbUser) {
       res.json(dbUser);
+    })
+    .catch(function(err) {
+      //whenever validation fails then an error is thrown
+      //we can catch error and prevent it from being "thrown", which could crash the node app
+      res.json(err);
     });
   });
 
