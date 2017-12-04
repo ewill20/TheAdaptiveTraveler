@@ -55,8 +55,8 @@
         var data =
         { handle:handle,
         password:userPassword,
-        firstname: req.body.firstname,
-        lastname: req.body.lastname
+        firstname: req.body.name
+        
         };
 
 

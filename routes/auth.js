@@ -12,7 +12,7 @@ app.get('/signup', authController.signup);
 
 app.get('/signin', authController.signin);
 
-app.post('/signup', passport.authenticate(function(req, res) {
+app.post('/landing', passport.authenticate(function(req, res) {
     try {
         res.redirect('/profile');
     }
@@ -26,7 +26,7 @@ app.post('/signup', passport.authenticate(function(req, res) {
 app.get('/profile',isLoggedIn, authController.profile);
 
 
-app.get('/logout',authController.logout);
+// app.get('/logout',authController.logout);
 
 
 app.post('/signin', passport.authenticate(function(req, res) { 
