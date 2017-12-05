@@ -130,7 +130,7 @@ input {
 .navbar-default {
 	width: 100% !important;
 	padding: 0 5px 5px 5px;
-	border-bottom: 1px solid #ff5800;
+	border-bottom: solid #ff5800 2px;
 }
 /*.panel-header {
 	text-align: center;
@@ -291,7 +291,8 @@ h1 {
 }
 footer {
 	background-color: #9c9c9c; 
-	color: white; border-top: solid #ff5800 2px; 
+	color: white; 
+	border-top: solid #ff5800 2px; 
 	text-align: center; 
 	padding: 15px 200px 15px 200px;
 	position: absolute !important;
