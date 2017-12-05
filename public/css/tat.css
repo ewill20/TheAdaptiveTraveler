@@ -41,8 +41,8 @@ html {
 	margin-bottom: 25px;
 }
 #yourTravels {
-	width: 210px !important;
-	height: 45px !important;
+	width: 250px !important;
+	height: 50px !important;
 	font-size: 18px !important;
 }
 .fa-4x {
@@ -69,8 +69,8 @@ html {
 	padding-left: 0 !important;
 }
 #create-profile {
-	width: 210px !important;
-	height: 45px !important;
+	width: 250px !important;
+	height: 50px !important;
 	font-size: 18px !important;
 	margin-bottom: 100px;
 }
