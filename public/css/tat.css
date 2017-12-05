@@ -23,7 +23,11 @@ body {
 	background-size: cover !important;
 }
 .berlin-background {
-	background-image: url('../BerlinShellhausdoneOrange2.jpg') !important;
+	background-image: url('../Images/BerlinShellhausdoneOrange2.jpg') !important;
+	background-size: cover !important;
+}
+.contact-background {
+	background-image: url('../Images/COSandDunesBeerBackpack.jpg') !important;
 	background-size: cover !important;
 }
 #content {
@@ -157,6 +161,24 @@ html {
 	background-image: -ms-linear-gradient(top, #44c4f8, #3144a2)!important;
 	background-image: -o-linear-gradient(top, #44c4f8, #3144a2)!important;
 	background-image: linear-gradient(to bottom, #44c4f8, #3144a2)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#letsgo-berlin {
+	background: #0a9ef4 !important;
+	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -ms-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -o-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: linear-gradient(to bottom, #0a9ef4, #00f9a7)!important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;

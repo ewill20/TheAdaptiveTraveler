@@ -1,69 +1,93 @@
-<div id="content">
-<div class="container-fluid">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header" id="landing-header">
-                        <a href="/landing"><img src="/Images/taticon.png" id="tatlogo"></a>           
-                        <a href="/landing"><h2 class="navbar-brand">The Adaptive Traveler</h2></a> 
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="/contact">Contact</a>
-                            </li>
-                            <li>
-                                <a href="/about">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<div id="content" class="contact-background">
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-expand-lg peach-gradient" id="contact-nav">
+            <div class="navbar-header" id="landing-header">
+                <a href="/landing">
+                    <img src="/Images/taticon.png" id="tatlogo">
+                </a>
+                <a href="/landing">
+                    <h2 class="navbar-brand">The Adaptive Traveler</h2>
+                </a>
             </div>
-            <div class="container-fluid">
-                    <div class="row main-content">
-                        <div class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-xl-8 col-xl-offset-4">
-                            <div class="panel panel-default" style="background-color: white; border: solid lightgray 1px;">
-                                <div class="panel panel-header text-center" id="Contact-Header">Contact</div>
-                                <!-- Form contact -->
-                                <form id="contact-form" action="mailto:ewill2020@gmail.com" method="post" enctype="text/plain">    
-                                    <div class="md-form">
-                                        <i class="fa fa-user prefix grey-text"></i>
-                                            <input type="text" id="form3" class="form-control">
-                                                <label for="form3">
-                                                    Your name
-                                                </label>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fa fa-envelope prefix grey-text"></i>
-                                            <input type="text" id="form2" class="form-control">
-                                                <label for="form2">
-                                                    Your email
-                                                </label>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fa fa-tag prefix grey-text"></i>
-                                            <input type="text" id="form32" class="form-control">
-                                                <label for="form32">
-                                                    Subject
-                                                </label>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fa fa-pencil prefix grey-text"></i>
-                                            <textarea type="text" id="form8" class="md-textarea" style="height: 100px">
-                                            </textarea>
-                                            <label for="form8">
-                                                Your message
-                                            </label>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="btn btn-default" id="send-button">Send <span><i class="fa fa-paper-plane-o ml-1"></i></span>
-                                        </button>
-                                    </div>
-                                </form>
-                                <!-- Form contact -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="input-group">
+                    <form id="form-search" method="get" action="" role="form" class="form-inline">
+                        <div class="form-group has-feedback">
+                            <div class="input-group">
+                                <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore"
+                                    id="search-text-input">
+                                <span class="input-group-btn">
+                                    <button id="letsgo" class="btn btn-default" type="button">Let's Go!
+                                        <span>
+                                            <i class="fa fa-paper-plane-o ml-1"></i>
+                                        </span>
+                                    </button>
+                                </span>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row main-content">
+            <div class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-4 col-xl-8 col-xl-offset-4">
+                <div class="panel panel-default" style="background-color: white; border: solid lightgray 1px;">
+                    <div class="panel panel-header text-center" id="Contact-Header">Contact</div>
+                    <!-- Form contact -->
+                    <form id="contact-form" action="mailto:ewill2020@gmail.com" method="post" enctype="text/plain">
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">
+                                Your name
+                            </label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">
+                                Your email
+                            </label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-tag prefix grey-text"></i>
+                            <input type="text" id="form32" class="form-control">
+                            <label for="form32">
+                                Subject
+                            </label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-pencil prefix grey-text"></i>
+                            <textarea type="text" id="form8" class="md-textarea" style="height: 100px">
+                                            </textarea>
+                            <label for="form8">
+                                Your message
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-default" id="send-button">Send
+                                <span>
+                                    <i class="fa fa-paper-plane-o ml-1"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Form contact -->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-                        <footer class="footer">
-                                © 2017 The Adaptive Traveler
-                        </footer>
+<footer class="footer">
+    © 2017 The Adaptive Traveler
+</footer>
