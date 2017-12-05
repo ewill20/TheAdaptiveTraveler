@@ -19,6 +19,11 @@ exports.about = function(req,res) {
 exports.berlin = function(req,res) {
 
   res.render('berlin');
+
+}
+exports.popDestinations = function(req, res) {
+
+  res.render('popDestinations');
   
 }
 exports.contact = function(req,res) {

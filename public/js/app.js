@@ -130,6 +130,9 @@ $('#account-link').on('click', function() {
 	window.location = '/profile'
 })
 
+$('#pop-destinations').on('click', function() {
+	window.location = '/popDestinations';
+})
 
 
 
