@@ -22,6 +22,10 @@ body {
 	background-image: url("../Images/CNShadowKnight.jpg") !important;
 	background-size: cover !important;
 }
+#berlin-background {
+	background-image: url('../BerlinShellhausdoneOrange2.jpg');
+	background-size: cover;
+}
 #content {
 	min-height: calc(100vh - 50px);
 	margin-bottom: 50px;

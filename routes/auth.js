@@ -12,6 +12,8 @@ app.get('/signup', authController.signup);
 
 app.get('/signin', authController.signin);
 
+app.get('/berlin', authController.berlin);
+
 app.post('/landing', passport.authenticate(function(req, res) {
     try {
         res.redirect('/profile');

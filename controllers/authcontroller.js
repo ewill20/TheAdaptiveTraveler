@@ -16,6 +16,11 @@ exports.about = function(req,res) {
   res.render('about');
 
 }
+exports.berlin = function(req,res) {
+
+  res.render('berlin');
+  
+}
 exports.contact = function(req,res) {
 
   res.render('contact');
