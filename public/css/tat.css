@@ -30,6 +30,10 @@ body {
 	background-image: url('../Images/COSandDunesBeerBackpack.jpg') !important;
 	background-size: cover !important;
 }
+.destinations-background {
+	background-image: url('../Images/ParisMetroSignRV2.jpg') !important;
+	background-size: cover !important;
+}
 #content {
 	min-height: calc(100vh - 50px);
 	margin-bottom: 50px;
@@ -46,13 +50,14 @@ html {
 }
 #your-travels {
 	padding-left: 0;
-	margin-bottom: 25px;
+	
 }
 #yourTravels {
-	width: 250px !important;
+	width: 300px !important;
 	height: 50px !important;
 	font-size: 18px !important;
 	background: #fecf75 !important;
+	margin-bottom: 50px !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
@@ -70,9 +75,10 @@ html {
     border-top-right-radius: 5px !important;
 }
 #pop-destinations {
-	width: 250px !important;
+	width: 300px !important;
 	height: 50px !important;
 	font-size: 18px !important;
+	margin-bottom: 50px !important;
 	background: #fecf75 !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
@@ -114,7 +120,7 @@ html {
 	padding-left: 0 !important;
 }
 #create-profile {
-	width: 250px !important;
+	width: 300px !important;
 	height: 50px !important;
 	font-size: 18px !important;
 	margin-bottom: 50px;
