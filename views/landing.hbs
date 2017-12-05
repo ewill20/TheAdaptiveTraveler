@@ -1,6 +1,6 @@
-<div id="content landing-background">
+<div id="content" class="landing-background">
 <div class="container-fluid">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-expand-md peach-gradient" id="landing-nav">
             <div class="navbar-header" id="landing-header">
                 <a href="/landing"><img src="/Images/taticon.png" id="tatlogo"></a>           
                 <a href="/landing"><h2 class="navbar-brand">The Adaptive Traveler</h2></a>
@@ -10,20 +10,21 @@
                     <form id="form-search" method="get" action="" role="form" class="form-inline">
                         <div class="form-group has-feedback">
                             <div class="input-group">
-                                <input style="color: white !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
+                                <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
                                 <span class="input-group-btn">
-                                    <button id="letsgo" class="btn btn-default" type="button">Let's Go!</button>
+                                    <button id="letsgo" class="btn btn-default" type="button">Let's Go!  <span><i class="fa fa-paper-plane-o ml-1"></i></span>
+                                    </button>
                                 </span>
                             </div>
                         </div>
                     </form>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" id="nav-links">
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a id="contact-about" href="/contact">Contact</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a id="contact-about" href="/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -38,7 +39,8 @@
         <div class="row secondary">
             <div id="your-travels" class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-5 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-2">
                 <!-- Button to open modal login form -->
-                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels" type="button">Your Travels</button>
+                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels" type="button">Your Travels<span><i class="fa fa-plane fa-4x ml-2"></i></span>
+                </button>
 
             <!-- The Modal -->
             <div id="login-window" class="modal">
@@ -76,7 +78,8 @@
         </div>
         <div class="row tertiary">
             <div id="signup-col" class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-5 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-4">
-                <button class="btn btn-default" id="create-profile" type="button">Create A Profile</button>
+                <button class="btn btn-default" id="create-profile" type="button">Create A Profile<span><i class="fa fa-user-circle ml-2"></i></span>
+                </button>
             </div>
         </div>
     </div>

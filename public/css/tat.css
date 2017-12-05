@@ -1,18 +1,26 @@
 html, body {
 	min-height: 100%;
+	min-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+div#content {
+	height: 100%;
+	
 }
 body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
-#landing-background {
+.landing-background {
 	background-image: url("../Images/CNZhangjiajie6.jpg") !important; 
 	background-size: cover !important;
 }
 #content {
-	min-height: calc(100vh - 70px);
-	margin-bottom: 60px;
+	min-height: calc(100vh - 50px);
+	margin-bottom: 50px;
 }
 html {
 	position: relative !important;
@@ -21,7 +29,8 @@ html {
 	width: 50px !important;	
 }*/
 #form-search {
-	margin-bottom: 25px;
+	width: 200px;
+	margin: 20px 50px;
 }
 #your-travels {
 	padding-left: 0;
@@ -42,11 +51,10 @@ html {
 	height: 100px !important;
 }
 #explore {
-	margin-right: 10px !important;
 	width: auto;
-	color: white;
-	padding-bottom: 2px;
-	margin-top: 10px;
+	color: #e7e7e7;
+	padding-bottom: 12px;
+	margin-top: 20px;
 }
 #signup-col {
 	padding-left: 0 !important;
@@ -57,6 +65,7 @@ html {
 }
 .input-group {
 	margin-left: 50px !important;
+	width: 350px !important;
 }
 
 #form-control1 {
@@ -75,6 +84,24 @@ html {
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;   
+}
+#letsgo {
+	background: #fecf75 !important;
+	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -o-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: linear-gradient(to bottom, #fecf75, #fb6966)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
 }
 input[type="text"]#explore::-webkit-input-placeholder {
 	color: white !important;
@@ -105,6 +132,9 @@ input {
 	z-index: 1;
 	width: 100%;
 }
+#nav-links {
+	margin-top: -55px;
+}
 .navbar-brand {
 	padding: 0px !important;
 	margin-left: 20px !important;
@@ -129,8 +159,13 @@ input {
 }
 .navbar-default {
 	width: 100% !important;
-	padding: 0 5px 5px 5px;
+	padding: 0 5px 5px 5px;	
+}
+#landing-nav {
 	border-bottom: solid #ff5800 2px;
+}
+#contact-about {
+	color: white;
 }
 /*.panel-header {
 	text-align: center;
