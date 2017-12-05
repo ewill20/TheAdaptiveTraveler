@@ -22,9 +22,9 @@ body {
 	background-image: url("../Images/CNShadowKnight.jpg") !important;
 	background-size: cover !important;
 }
-#berlin-background {
-	background-image: url('../BerlinShellhausdoneOrange2.jpg');
-	background-size: cover;
+.berlin-background {
+	background-image: url('../BerlinShellhausdoneOrange2.jpg') !important;
+	background-size: cover !important;
 }
 #content {
 	min-height: calc(100vh - 50px);
@@ -234,6 +234,9 @@ input {
 #about-nav {
 	border-bottom: solid #1e4be2 2px;
 }
+#berlin-nav {
+	border-bottom: solid #00f9a7;
+}
 #contact-about {
 	color: white;
 	font-size: 18px;
@@ -409,6 +412,9 @@ footer {
 }
 #about-footer {
 	border-top: solid #1e4be2 2px;
+}
+#berlin-footer {
+	border-top: solid #0a9ef4 2px;
 }
 #form8 {
 	width: 100%;
