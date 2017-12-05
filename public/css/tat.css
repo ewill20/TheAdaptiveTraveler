@@ -161,6 +161,7 @@ input {
 	padding: 0px !important;
 	margin-left: 20px !important;
 	color: white !important;
+	font-size: 25px !important;
 }
 #tatlogo {
 	height: 80px;
@@ -192,6 +193,7 @@ input {
 }
 #contact-about {
 	color: white;
+	font-size: 18px;
 }
 /*.panel-header {
 	text-align: center;
