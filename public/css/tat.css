@@ -23,7 +23,7 @@ body {
 	background-size: cover !important;
 }
 .berlin-background {
-	background-image: url('../Images/BerlinShellhausdoneOrange2.jpg') !important;
+	background-image: url('../Images/BerlinBerlinerDomSQ.jpg') !important;
 	background-size: cover !important;
 }
 .contact-background {
@@ -57,7 +57,6 @@ html {
 	height: 50px !important;
 	font-size: 18px !important;
 	background: #fecf75 !important;
-	margin-bottom: 50px !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
