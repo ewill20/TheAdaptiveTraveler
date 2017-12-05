@@ -308,17 +308,14 @@ input {
 	color: white;
 	font-size: 18px;
 }
-/*.panel-header {
-	text-align: center;
-	height: 50px;
-	font-size: 30px;
+#cultural-tips-header {
 	font-family: 'Fresca', sans-serif;
-}*/
+	color: #777;
+	font-size: 20px;
+}
 #create-profile-panel {
 	width: 400px;
 	margin-bottom: 200px;
-	/* text-align: center; */
-
 }
 #create-profile-header {
 	font-family: 'Fresca', sans-serif;
