@@ -18,8 +18,8 @@ body {
 	background-image: url("../Images/CNZhangjiajie6.jpg") !important; 
 	background-size: cover !important;
 }
-#about-background {
-	background-image: url('../Images/CNShadowKnight.jpg') !important;
+.about-background {
+	background-image: url("../Images/CNShadowKnight.jpg") !important;
 	background-size: cover !important;
 }
 #content {
