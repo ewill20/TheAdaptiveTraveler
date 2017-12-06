@@ -4,15 +4,15 @@ var db = require('../models');
 
 module.exports = function(app) {
 
-    app.get('/api/user/:handle', function(req,res) {
+    app.get('/api/user/:id', function(req,res) {
         var query = {};
         if (req.query.User_id) {
-            query.UserId = req.query.User_handle;
+            query.UserId = req.query.User_id;
         }
 
         db.User.findOne({
             where: {
-                handle: req.params.handle
+                id: req.params.id
             },
                 include: [db.User]
             }).then(function(dbUser) {

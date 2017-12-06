@@ -116,12 +116,12 @@ html {
 	font-size: 1em !important;
 }
 .initial {
-	height: 50px !important;
+	height: 80px !important;
 	align-items: center !important;
 	margin-right: auto !important;
 }
 .secondary {
-	height: 100px !important;
+	height: 80px !important;
 }
 .tertiary {
 	height: 100px !important;

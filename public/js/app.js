@@ -100,7 +100,6 @@ $("#creating-profile").on("click", function() {
 			location: $("#location").val().trim(),
 			handle: $("#handle").val().trim(),
 			password: pass1,
-			photo: photo
 		}
 		$.ajax("/api/user", {
 			type: "POST",
