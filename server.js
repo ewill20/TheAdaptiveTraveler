@@ -14,17 +14,18 @@ var db = require("./models")
 
 
 // For Passport
- 
+ // Serving up static assets //
+app.use(express.static("public"));
+
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
-
 app.use(passport.initialize());
-
 app.use(passport.session()); // persistent login sessions
+
+
 const PORT = process.env.PORT || 5000;
 
 
-// Serving up static assets //
-app.use(express.static("public"));
+
 
 
 // Standard code for body-parser //
@@ -32,12 +33,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-
-
-// For Passport //
-app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
-    app.use(passport.initialize());
-    app.use(passport.session()); // persistent login sessions
 
 //For Handlebars
     app.set('views', './views');
@@ -48,16 +43,16 @@ app.get('/', function(req, res){
     res.render("landing");
   });
 app.get('/profile', function(req, res) {
-  console.log(req.params.id);
-  res.render('profile', {
-    user: {
-      profilePicture: url("/Images/default-avatar.png"),
-      handle: "",
-      name: "",
-      email: "",
-      location: ""
-    }
-  })
+  console.log(req.params.user);
+  res.render('profile');
+  //   user: {
+  //     profilePicture: url("Images/default-avatar.png"),
+  //     handle: "",
+  //     name: "",
+  //     email: "",
+  //     location: ""
+  //   }
+  // })
 });
 
 //Models

@@ -12,7 +12,12 @@ var User = sequelize.define('User', {
       notEmpty: true
     },
     handle: {
-      type: DataTypes.TEXT
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        is: /^[a-z0-9\_\-]+$/i
+      }
     },
     email: {
       type: DataTypes.STRING,
@@ -30,7 +35,8 @@ var User = sequelize.define('User', {
     status: {
       type: DataTypes.ENUM('active', 'inactive'),
       defaultValue: 'active'
-    }  
+    }, 
+  
   });
 
 return User;

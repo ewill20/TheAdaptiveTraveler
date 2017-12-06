@@ -33,15 +33,12 @@ app.get('/profile',isLoggedIn, authController.profile);
 // app.get('/logout',authController.logout);
 
 
-app.post('/signin', passport.authenticate(function(req, res) { 
-    try {
-        res.redirect('/profile')
-    }
-    catch (err) {
-        console.log(err);
-        res.redirect('/signin');
-    }
-}));
+app.post('/signin', passport.authenticate('local'),
+    function(req, res) {
+   res.redirect('/profile' + req.user.handle)
+});
+
+    
 
 
 function isLoggedIn(req, res, next) {

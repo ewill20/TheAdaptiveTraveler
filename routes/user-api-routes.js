@@ -3,12 +3,11 @@
 var db = require('../models');
 
 module.exports = function(app) {
-
-    app.get('/api/user/:id', function(req,res) {
-        var query = {};
-        if (req.query.id) {
-            query.UserId = req.query.id;
-        }
+// Get individual user
+    app.get('/api/user/:id', function(req,res, next) {
+        var userRet = findById(req.params.id);
+            res.render("/profile", {User: User, name: User.name});
+        });
 
         db.User.findOne({
             where: {
@@ -17,6 +16,12 @@ module.exports = function(app) {
                 include: [db.User]
             }).then(function(dbUser) {
             res.json(dbUser)
-        })
-    })
-}
+        });
+    };
+    
+    app.post("/api/user", function(req, res) {
+        db.User.create(req.body).then(function(dbUser){
+            res.json(dbUser);
+        });
+    });
+

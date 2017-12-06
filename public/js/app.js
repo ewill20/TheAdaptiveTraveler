@@ -34,7 +34,7 @@ $("#letsgo").on("click", function() {
 
 		$.ajax({
 			type: "POST",
-			url: "../",
+			url: "#",
 			data: data,
 			beforeSend: function(html) { // this happens before actual call
                     $("#results").html(''); 
@@ -52,18 +52,18 @@ $("#letsgo").on("click", function() {
 
 
 // "login" button click listener, this also validates whether or not both input fields have something entered //
-// $("#login-button").on("click", function() {
-// 	if($('#username').val() == '') {
-// 		alert("Please enter a valid username");
-// 		return false;
+$("#login-button").on("click", function() {
+	if($('#login-handle').val() == '') {
+		alert("Please enter a valid username");
+		return false;
 
-// 	} else if($('#password').val() == '') {
-// 		alert("Please enter a valid password");
-// 		return false;
-// 	} else(window.location = "/profile");
-// 		console.log("login successful");
-// 		return true;
-// });
+	} else if($('#password').val() == '') {
+		alert("Please enter a valid password");
+		return false;
+	} else(window.location = "/profile");
+		console.log("login successful");
+		return true;
+});
 
 // click listener for submit button when creating a new profile //
 $("#creating-profile").on("click", function() {
@@ -108,9 +108,8 @@ $("#creating-profile").on("click", function() {
 			function(newUser) {
 				alert("You Have Successfully Created A Profile!");
 				console.log(newUser);
-				$("#input").empty();
-				// window.location = ("/profile");
-				// return newUserObj;
+				window.location = "/profile";
+				$("#your-travels-body").append(newUserObj);
 			}
 			
 		);

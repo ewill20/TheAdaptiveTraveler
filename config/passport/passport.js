@@ -1,7 +1,7 @@
 
   //load bcrypt
   var bCrypt = require('bcrypt-nodejs');
-
+  
   module.exports = function(passport,user){
 
   var User = user;
@@ -69,7 +69,8 @@
             return done(null,newUser);
             
           }
-
+          return newUser;
+          alert("You're a User Now!")
 
         });
       }
