@@ -46,7 +46,7 @@ app.get('/landing', function(req, res) {
 
   // DELETE route for deleting users. We can get the id of the todo to be deleted from
   // req.params.id
-  app.delete("/api/users/:id", function(req, res) {
+  app.delete("/api/user/:id", function(req, res) {
     // We just have to specify which user we want to destroy with "where"
     db.User.destroy({
       where: {
@@ -59,7 +59,7 @@ app.get('/landing', function(req, res) {
   });
 
   // PUT route for updating user. We can get the updated user data from req.body
-  app.put("/api/users", function(req, res) {
+  app.put("/api/user", function(req, res) {
     // Update takes in an object describing the properties we want to update, and
     // we use where to describe which objects we want to update
     db.User.update({

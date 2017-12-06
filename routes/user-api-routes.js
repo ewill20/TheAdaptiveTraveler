@@ -6,8 +6,8 @@ module.exports = function(app) {
 
     app.get('/api/user/:id', function(req,res) {
         var query = {};
-        if (req.query.User_id) {
-            query.UserId = req.query.User_id;
+        if (req.query.id) {
+            query.UserId = req.query.id;
         }
 
         db.User.findOne({
