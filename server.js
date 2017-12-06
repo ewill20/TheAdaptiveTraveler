@@ -61,6 +61,7 @@ app.get('/profile', function(req, res) {
 //Routes
     var authRoute = require('./routes/auth.js')(app,passport);
     require("./routes/api-routes.js")(app);
+    require("./routes/user-api-routes.js")(app);
 
 
     //load passport strategies
