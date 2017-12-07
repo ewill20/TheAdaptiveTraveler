@@ -14,6 +14,12 @@ app.get('/signin', authController.signin);
 
 app.get('/berlin', authController.berlin);
 
+app.get('/kyoto', authController.kyoto);
+
+app.get('/hangzhou', authController.hangzhou);
+
+app.get('/paris', authController.paris);
+
 app.get('/popDestinations', authController.popDestinations);
 
 app.post('/landing', passport.authenticate(function(req, res) {

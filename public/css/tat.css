@@ -34,6 +34,13 @@ body {
 	background-image: url('../Images/ParisMetroSignRV2.jpg') !important;
 	background-size: cover !important;
 }
+.kyoto-background {
+	background-image: url('../Images/Kyoto-shiShrineRV.jpg') !important;
+	background-size: cover !important;
+}
+#tips-column {
+	margin-left: -10px;
+}
 #content {
 	min-height: calc(100vh - 50px);
 	margin-bottom: 50px;

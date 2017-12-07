@@ -26,6 +26,21 @@ exports.popDestinations = function(req, res) {
   res.render('popDestinations');
   
 }
+exports.kyoto = function(req, res) {
+
+  res.render('kyoto');
+
+}
+exports.paris = function(req, res) {
+
+  res.render('paris');
+
+}
+exports.hangzhou = function(req, res) {
+  
+  res.render('hangzhou');
+  
+}
 exports.contact = function(req,res) {
 
   res.render('contact');
