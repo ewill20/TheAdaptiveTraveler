@@ -30,19 +30,19 @@
   passport.use('local-signup', new LocalStrategy(
 
     {           
-      usernameField : 'handle',
-      passwordField : 'psw',
+      usernameField : 'email',
+      passwordField : 'password',
       passReqToCallback : true // allows us to pass back the entire request to the callback
     },
 
-    function(req, handle, psw, done){
+    function(req, email, password, done){
        
 
-      var generateHash = function(psw) {
-      return bCrypt.hashSync(psw, bCrypt.genSaltSync(8), null);
+      var generateHash = function(password) {
+      return bCrypt.hashSync(password, bCrypt.genSaltSync(8), null);
       };
 
-       User.findOne({where: {handle:handle}}).then(function(user){
+       User.findOne({where: {email:email}}).then(function(user){
 
       if(user)
       {
@@ -51,9 +51,9 @@
 
       else
       {
-        var userPassword = generateHash(psw);
+        var userPassword = generateHash(password);
         var data =
-        { handle:handle,
+        { email:email,
         password:userPassword,
         firstname: req.body.name
         
@@ -105,10 +105,10 @@
       return bCrypt.compareSync(psw, userpass);
     }
 
-    User.findOne({ where : { handle:handle}}).then(function (user) {
+    User.findOne({ where : { email:email}}).then(function (user) {
 
       if (!user) {
-        return done(null, false, { message: 'Handle does not exist' });
+        return done(null, false, { message: 'That Email does not exist' });
       }
 
       if (!isValidPassword(user.psw,psw)) {
