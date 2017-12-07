@@ -1,23 +1,16 @@
 // models/user.js
 module.exports = function(sequelize, DataTypes) {
 
-var User = sequelize.define('User', {
+const User = sequelize.define('user', {
     id: {
+      type: DataTypes.UUID,
       autoIncrement: true,
       primaryKey: true,
-      type: DataTypes.INTEGER
+      defaultValue: DataTypes.UUIDV4
     },
     name: {
       type: DataTypes.STRING,
-      notEmpty: true
-    },
-    handle: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        is: /^[a-z0-9\_\-]+$/i
-      }
+      required: true
     },
     email: {
       type: DataTypes.STRING,
@@ -27,6 +20,14 @@ var User = sequelize.define('User', {
     },
     location: {
       type: DataTypes.STRING,
+    },
+    handle: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        is: /^[a-z0-9\_\-]+$/i
+      }
     },
     password: {
       type: DataTypes.STRING,
