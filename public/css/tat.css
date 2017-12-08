@@ -589,10 +589,13 @@ footer {
 .close {
 	position: absolute;
 	right: 25px;
+	top: 70px;
+	left: 1080px;
 	top: 0;
 	color: #000;
 	font-size: 35px;
 	font-weight: bold;
+	z-index: 3;
 }
 
 close:hover,
