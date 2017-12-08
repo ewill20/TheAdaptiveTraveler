@@ -9,31 +9,31 @@
                     <h2 class="navbar-brand">The Adaptive Traveler</h2>
                 </a>
             </div>
-                <div class="input-group">
-                    <form id="form-search" method="get" action="" role="form" class="form-inline">
-                        <div class="form-group has-feedback">
-                            <div class="input-group">
-                                <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore"
-                                    id="search-text-input">
-                                <span class="input-group-btn">
-                                    <button id="letsgo" class="btn btn-default" type="button">Let's Go!
-                                        <span>
-                                            <i class="fa fa-paper-plane-o ml-1"></i>
-                                        </span>
-                                    </button>
-                                </span>
-                            </div>
+            <div class="input-group">
+                <form id="form-search" method="get" action="" role="form" class="form-inline">
+                    <div class="form-group has-feedback">
+                        <div class="input-group">
+                            <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore"
+                                id="search-text-input">
+                            <span class="input-group-btn">
+                                <button id="letsgo" class="btn btn-default" type="button">Let's Go!
+                                    <span>
+                                        <i class="fa fa-paper-plane-o ml-1"></i>
+                                    </span>
+                                </button>
+                            </span>
                         </div>
-                    </form>
-                </div>
-                <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
-                    <li>
-                        <a id="contact-about" href="/contact">Contact | </a>
-                    </li>
-                    <li>
-                        <a id="contact-about" class="ml-2" href="/about">  About</a>
-                    </li>
-                </ul>
+                    </div>
+                </form>
+            </div>
+            <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
+                <li>
+                    <a id="contact-about" href="/contact">Contact | </a>
+                </li>
+                <li>
+                    <a id="contact-about" class="ml-2" href="/about"> About</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="container-fluid" id="content">
@@ -44,7 +44,7 @@
                     <span>
                         <i class="fa fa-map-pin fa-4x ml-3"></i>
                     </span>
-                </button> 
+                </button>
             </div>
         </div>
         <div class="row secondary">
@@ -88,90 +88,103 @@
                         </div>
 
                         <div class="container-fluid text-center" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn" id="send-button">Cancel</button>
+                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn"
+                                id="send-button">Cancel</button>
                             <span class="psw">
                                 <a href="#">Forgot Password?</a>
                             </span>
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
         <div class="row tertiary">
             <div id="signup-col" class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-4">
                 <!-- The button to open to open the modal -->
-                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile" type="button">Create A Profile
+                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
+                    type="button">Create A Profile
                     <span>
                         <i class="fa fa-user-circle fa-4x ml-3"></i>
                     </span>
                 </button>
                 <!-- The Modal -->
                 <div id="create-window" class="modal">
-                    <span onclick="document.getElementById('create-window').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
 
                     <!-- Modal Content -->
-                    <form class="modal-content animate" id="create-form-window">
-                        {{!-- <div class="imgcontainer">
+                    <form class="modal-content-login animate" role="form" id="create-form-window">
+                        {{!--
+                        <div class="imgcontainer">
                             <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
                         </div> --}}
 
-                        <div class="container-fluid" id="window">
-                            <label id="firstName-label">
-                                <b>First Name</b>
-                            </label>
-                            <br />
-                            <input id="create-fname" type="text" placeholder="First Name" name="firstName" required>
+                        <div class="container-fluid" id="window2">
+                            <div class="md-form">
+                                <i class="fa fa-id-card prefix grey-text"></i>
+                                <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
+                                <label for="first-name">
 
-                            <label id="lastName-label">
-                                <b>Last Name</b>
-                            </label>
-                            <br />
-                            <input id="create-lname" type="text" placeholder="Last Name" name="lastName" required>
-                            
-                            <label id="email-label">
-                                <b><i class="fa fa-envelope prefix grey-text"></i></b>
-                            </label>
-                            <br />
-                            <input id="create-email" type="text" placeholder="Enter Your Email" name="create-email" required>
+                                </label>
+                            </div>
 
-                            <label id="location-label">
-                                <b>Location</b>
-                            </label>                            
-                            <br />
-                            <input id="create-location" type="text" placeholder="Enter Your Location" name="create-location">
+                            <div class="md-form">
+                                <i class="fa fa-id-card prefix grey-text"></i>
+                                <input type="text" class="form-control" id="last-name" placeholder="     Last Name" required>
+                                <label for="last-name">
 
-                            <label id="handle-label">
-                                <b>Handle</b>
-                            </label>
-                            <br />
-                            <input id="create-handle" type="text" placeholder="Choose A Handle" name="create-handle" required>
+                                </label>
+                            </div>
 
-                            <label id="password1-label">
-                                <b>Choose A Password</b>
-                            </label>
-                            <br />
-                            <input id="create-password" type="password" placeholder="Choose A Password" name="create-password" required>
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" class="form-control" id="create-email" placeholder="     Email Address" required>
+                                <label for="create-email">
 
-                            <label id="password2-label">
-                                <b>Confirm Password</b>
-                            </label>
-                            <br />
-                            <input id="confirm-password" type="password" placeholder="Confirm Password" name="confirm-password" required>
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-map-marker prefix grey-text"></i>
+                                <input type="text" class="form-control" id="create-location" placeholder="     Enter Your Location" required>
+                                <label for="create-location">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-user prefix grey-text"></i>
+                                <input type="text" class="form-control" id="create-handle" placeholder="      Enter A Handle" required>
+                                <label for="create-handle">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-qrcode prefix grey-text"></i>
+                                <input type="password" class="form-control" id="create-password1" placeholder="     Please Enter A Password" required>
+                                <label for="create-password1">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-thumbs-o-up prefix grey-text"></i>
+                                <input type="password" class="form-control" id="confirm-password2" placeholder="     Please Confirm Your Password" required>
+                                <label for="confirm-password2">
+
+                                </label>
+                            </div>
 
                             <button class="btn btn-default" id="send-button" type="submit">Login</button>
-                            <br />
-                            <div id="checkbox">
-                                <input type="checkbox" checked="checked"> Remember Me
-                            </div>
-                        </div>
 
-                        <div class="container-fluid text-center" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn" id="send-button">Cancel</button>
+                        {{!-- <div class="container-fluid text-center" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('create-window').style.display='none'" class="btn btn-default cancelbtn"
+                                id="send-button">Cancel</button>
                             <span class="psw">
                                 <a href="#">Forgot Password?</a>
                             </span>
-                        </div>
+                        </div> --}}
                     </form>
                 </div>
             </div>
