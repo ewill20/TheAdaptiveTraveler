@@ -95,6 +95,17 @@
                         </div>
                     </form>
                 </div>
+                
+            </div>
+        </div>
+        <div class="row tertiary">
+            <div id="signup-col" class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-4">
+                <!-- The button to open to open the modal -->
+                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile" type="button">Create A Profile
+                    <span>
+                        <i class="fa fa-user-circle fa-4x ml-3"></i>
+                    </span>
+                </button>
                 <!-- The Modal -->
                 <div id="create-window" class="modal">
                     <span onclick="document.getElementById('create-window').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -119,13 +130,35 @@
                             <input id="create-lname" type="text" placeholder="Last Name" name="lastName" required>
                             
                             <label id="email-label">
-                                <b>Email</b>
+                                <b><i class="fa fa-envelope prefix grey-text"></i></b>
                             </label>
                             <br />
                             <input id="create-email" type="text" placeholder="Enter Your Email" name="create-email" required>
 
-                            
+                            <label id="location-label">
+                                <b>Location</b>
+                            </label>                            
                             <br />
+                            <input id="create-location" type="text" placeholder="Enter Your Location" name="create-location">
+
+                            <label id="handle-label">
+                                <b>Handle</b>
+                            </label>
+                            <br />
+                            <input id="create-handle" type="text" placeholder="Choose A Handle" name="create-handle" required>
+
+                            <label id="password1-label">
+                                <b>Choose A Password</b>
+                            </label>
+                            <br />
+                            <input id="create-password" type="password" placeholder="Choose A Password" name="create-password" required>
+
+                            <label id="password2-label">
+                                <b>Confirm Password</b>
+                            </label>
+                            <br />
+                            <input id="confirm-password" type="password" placeholder="Confirm Password" name="confirm-password" required>
+
                             <button class="btn btn-default" id="send-button" type="submit">Login</button>
                             <br />
                             <div id="checkbox">
@@ -141,15 +174,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
-        <div class="row tertiary">
-            <div id="signup-col" class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-5 col-xl-8 col-xl-offset-4">
-                <button class="btn btn-default" id="create-profile" type="button">Create A Profile
-                    <span>
-                        <i class="fa fa-user-circle fa-4x ml-3"></i>
-                    </span>
-                </button>
             </div>
         </div>
     </div>
