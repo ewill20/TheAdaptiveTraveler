@@ -16,7 +16,7 @@
                             <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore"
                                 id="search-text-input">
                             <span class="input-group-btn">
-                                <button id="letsgo" class="btn btn-default" type="button">Let's Go!
+                                <button id="letsgo" class="btn btn-default waves-effect" type="button">Let's Go!
                                     <span>
                                         <i class="fa fa-paper-plane-o ml-1"></i>
                                     </span>
@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col-xs-1 col-sm-2 col-md-3 col-lg-2 col-xl-2">
                 <div class="dropdown">
-                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="yourTravels" data-toggle="dropdown">The "Good Good"
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="letsgo" data-toggle="dropdown">The "Good Good"
 
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="yourTravels" data-toggle="dropdown">Caché
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="letsgo" data-toggle="dropdown">Caché
 
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="yourTravels" data-toggle="dropdown">Do What?
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="letsgo" data-toggle="dropdown">Do What?
 
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
@@ -100,7 +100,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="yourTravels" data-toggle="dropdown">Grub
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="letsgo" data-toggle="dropdown">Grub
 
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu4">
@@ -128,7 +128,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="yourTravels" data-toggle="dropdown">Cultural
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" id="letsgo" data-toggle="dropdown">Cultural
 
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu5">
@@ -149,17 +149,54 @@
             </div>
             <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-2 col-xl-8 col-xl-offset-4"
                 style="padding-left: 5px;">
-                <button class="btn btn-default" id="pop-destinations" type="button">Popular Destinations
+                {{!-- <button class="btn btn-default" id="pop-destinations" type="button">Popular Destinations
                     <span>
                         <i class="fa fa-map-pin fa-4x ml-3"></i>
                     </span>
-                </button>
+                </button> --}}
+                <!--Card-->
+                    <div class="card card-cascade" id="card1">
+
+                <!--Card image-->
+                <a href="/popDestinations">
+                    <div class="view gradient-card-header peach-gradient">
+                        <h2 class="h2-responsive">Popular Destinations</h2>
+                    </div></a>
+                <!--/Card image-->
+
+                <!--Card content-->
+                    <div class="card-body text-center">
+                    
+                        <h4 class="card-text">The most popular destinations in the world with all the information you need to know for your trip
+                        </h4>
+
+                        <a href="/berlin">
+                            <h4 id="small-berlin">Berlin</h4>
+                            <img style="width: 125px; height: 125px;" class="img-responsive" id="berlin-corner" src="../Images/BerlinShellhausdoneOrange2.jpg">
+                        </a>
+
+                        <a href="/kyoto">
+                            <h4 class="text-right" id="small-kyoto">Kyoto</h4>
+                            <img style="width: 125px; height: 125px; float: right;" class="img-responsive" id="kyoto-corner" src="../Images/Kyoto-shiShrineRV.jpg">
+                        </a>
+
+                        <a href="/hangzhou">
+                            <h4 class="text-left" id="small-hangzhou">Hangzhou</h4>
+                            <img style="width: 125px; height: 125px; float: left;" class="img-responsive" id="hangzhou-corner" src="../Images/CNWestLakeBoat.jpg">
+                        </a>
+                    </div>
+                <!--/.Card content-->
+
+                    </div>
+                <!--/.Card-->
+                
                 <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels"
                     type="button">Your Travels
                     <span>
                         <i class="fa fa-plane fa-4x ml-3"></i>
                     </span>
                 </button>
+                
 
                 <!-- The Modal -->
                 <div id="login-window" class="modal">
