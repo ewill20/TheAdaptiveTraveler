@@ -213,6 +213,27 @@ html {
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }
+#side-dropdowns {
+	width: 250px;
+	height: 50px;
+	font-size: 18px;
+	background: #fecf75 !important;
+	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: -o-linear-gradient(top, #fecf75, #fb6966)!important;
+	background-image: linear-gradient(to bottom, #fecf75, #fb6966)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
 #send-button {
 	margin-bottom: 10px;
 	background: #fecf75 !important;
