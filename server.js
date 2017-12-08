@@ -54,6 +54,8 @@ app.get('/profile', function(req, res) {
   //   }
   // })
 });
+ //load passport strategies
+ require('./config/passport/passport.js')(passport, db.user);
 
 //Models
     var models = require("./models");
@@ -64,8 +66,7 @@ app.get('/profile', function(req, res) {
     require("./routes/user-api-routes.js")(app);
 
 
-    //load passport strategies
-    require('./config/passport/passport.js')(passport, models.user);
+   
 
 
 app.get('/', function(req, res) {

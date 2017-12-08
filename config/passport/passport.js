@@ -1,4 +1,4 @@
-
+const passport = require('passport');
   //load bcrypt
   var bCrypt = require('bcrypt-nodejs');
   
@@ -36,6 +36,7 @@
     },
 
     function(req, email, password, done){
+      console.log('in local-signup method');
        
 
       var generateHash = function(password) {
@@ -69,8 +70,6 @@
             return done(null,newUser);
             
           }
-          return newUser;
-          alert("You're a User Now!")
 
         });
       }
@@ -92,8 +91,8 @@
   {
 
   // by default, local strategy uses username and password, we will override with email
-  usernameField : 'handle',
-  passwordField : 'psw',
+  usernameField : 'email',
+  passwordField : 'password',
   passReqToCallback : true // allows us to pass back the entire request to the callback
   },
 
