@@ -138,7 +138,9 @@ $("#pop-destinations-blue").on("click", function() {
 $('#pop-destinations-aqua').on("click", function() {
 	window.location = '/popDestinations';
 })
-
+$('#send-button').on('click', function() {
+	window.location = '/profile';
+})
 
 
 
