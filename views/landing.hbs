@@ -147,7 +147,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-2 col-xl-8 col-xl-offset-4"
+            <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-1 col-xl-8 col-xl-offset-4"
                 style="padding-left: 5px;">
                 {{!-- <button class="btn btn-default" id="pop-destinations" type="button">Popular Destinations
                     <span>
@@ -184,6 +184,11 @@
                             <h4 class="text-left" id="small-hangzhou">Hangzhou</h4>
                             <img style="width: 125px; height: 125px; float: left;" class="img-responsive" id="hangzhou-corner" src="../Images/CNWestLakeBoat.jpg">
                         </a>
+
+                        <a href="/paris">
+                            <h4 class="text-right" id="small-paris">Paris</h4>
+                            <img style="width: 125px; height: 125px; float: right;" class="img-responsive" id="paris-corner" src="../Images/ParisOpéra.jpg">
+                        </a>
                     </div>
                 <!--/.Card content-->
 
@@ -200,10 +205,12 @@
 
                 <!-- The Modal -->
                 <div id="login-window" class="modal">
-                    <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    
 
                     <!-- Modal Content -->
                     <form class="modal-content animate" id="login-form-window">
+                            <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        
                         <div class="imgcontainer">
                             <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
                         </div>
@@ -247,12 +254,13 @@
                 </button>
                 <!-- The Modal -->
                 <div id="create-window" class="modal">
-                    <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
+                    
 
                     <!-- Modal Content -->
                     <form class="modal-content-login animate" role="form" id="create-form-window">
-
+                        
                         <div class="container-fluid" id="window2">
+                            <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
                             <div class="md-form">
                                 <i class="fa fa-id-card prefix grey-text"></i>
                                 <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
