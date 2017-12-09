@@ -42,6 +42,10 @@ body {
 	background-image: url('../Images/CNWestLakeBoat.jpg') !important;
 	background-size: cover !important;
 }
+.paris-background {
+	background-image: url('../Images/ParisMetroSignRV2.jpg') !important;
+	background-size: cover !important;
+}
 #tips-column {
 	margin-left: -10px;
 }
@@ -88,15 +92,63 @@ html {
 	margin-right: 400px;
 }
 #pop-destinations {
-	width: 300px !important;
-	height: 50px !important;
+	width: 195px !important;
+	height: 80px !important;
 	font-size: 18px !important;
+	margin-bottom: 7px;
+	margin-left: 20px;
 	background: #fecf75 !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -o-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: linear-gradient(to bottom, #fecf75, #fb6966)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#pop-destinations-blue {
+	width: 195px !important;
+	height: 80px !important;
+	font-size: 18px !important;
+	margin-bottom: 7px;
+	margin-left: 20px;
+	background: #44c4f8 !important;
+	background-image: -webkit-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -moz-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -ms-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -o-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: linear-gradient(to bottom, #44c4f8, #3144a2)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#pop-destinations-aqua {
+	width: 195px !important;
+	height: 80px !important;
+	font-size: 18px !important;
+	margin-bottom: 7px;
+	margin-left: 20px;
+	background: #0a9ef4 !important;
+	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -ms-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -o-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: linear-gradient(to bottom, #0a9ef4, #00f9a7)!important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
@@ -223,6 +275,48 @@ html {
 	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -o-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: linear-gradient(to bottom, #fecf75, #fb6966)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#side-dropdowns-blue {
+	width: 250px;
+	height: 50px;
+	font-size: 18px;
+	background: #44c4f8 !important;
+	background-image: -webkit-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -moz-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -ms-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: -o-linear-gradient(top, #44c4f8, #3144a2)!important;
+	background-image: linear-gradient(to bottom, #44c4f8, #3144a2)!important;
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#side-dropdowns-aqua {
+	width: 250px;
+	height: 50px;
+	font-size: 18px;
+	background: #0a9ef4 !important;
+	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -ms-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: -o-linear-gradient(top, #0a9ef4, #00f9a7)!important;
+	background-image: linear-gradient(to bottom, #0a9ef4, #00f9a7)!important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;

@@ -132,7 +132,12 @@ $('#pop-destinations').on('click', function() {
 	window.location = '/popDestinations';
 })
 
-
+$("#pop-destinations-blue").on("click", function() {
+	window.location = '/popDestinations';
+})
+$('#pop-destinations-aqua').on("click", function() {
+	window.location = '/popDestinations';
+})
 
 
 
