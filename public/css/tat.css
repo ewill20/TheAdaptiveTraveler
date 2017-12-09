@@ -450,11 +450,14 @@ input {
 	border-bottom: solid #1e4be2 2px;
 }
 #berlin-nav {
-	border-bottom: solid #00f9a7;
+	border-bottom: solid #00f9a7 2px;
 }
 #contact-about {
 	color: white;
 	font-size: 18px;
+}
+#contact-nav {
+	border-bottom: solid #fb6966 2px; 
 }
 #cultural-tips-header {
 	font-family: 'Fresca', sans-serif;
