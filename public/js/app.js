@@ -52,7 +52,7 @@ $("#letsgo").on("click", function() {
 
 
 // "login" button click listener, this also validates whether or not both input fields have something entered //
-$("#login-button").on("click", function() {
+$("#send-button").on("click", function() {
 	if($('#login-handle').val() == '') {
 		alert("Please enter a valid username");
 		return false;
