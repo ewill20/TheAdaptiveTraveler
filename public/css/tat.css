@@ -239,6 +239,7 @@ html {
 .btn-default {
 	background-color: #ff5800 !important;
 	color: white !important; 
+	font-weight: 345 !important;
     background: -webkit-linear-gradient(#ff670f 0%, #ff5800 100%)!important;
     background: -o-linear-gradient(#ff670f 0%, #ff5800 100%)!important;
     background: linear-gradient(#ff670f 0%, #ff5800 100%)!important; 
@@ -370,6 +371,7 @@ html {
 	width: 75px;
 	height: 50px;
 	margin-top: 0px;
+	font-size: 12px !important;
 	background: #0a9ef4 !important;
 	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
 	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
