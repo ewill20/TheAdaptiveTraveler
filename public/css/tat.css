@@ -138,11 +138,12 @@ html {
     border-top-right-radius: 5px !important;
 }
 #pop-destinations-aqua {
-	width: 195px !important;
-	height: 80px !important;
-	font-size: 18px !important;
-	margin-bottom: 7px;
+	width: 245px !important;
+	height: 50px !important;
+	font-size: 15px !important;
+	margin-bottom: 0px;
 	margin-left: 20px;
+	margin-top: -45px;
 	background: #0a9ef4 !important;
 	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
 	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
@@ -366,6 +367,9 @@ html {
     border-top-right-radius: 5px !important;
 }
 #letsgo-berlin {
+	width: 75px;
+	height: 50px;
+	margin-top: 0px;
 	background: #0a9ef4 !important;
 	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
 	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
