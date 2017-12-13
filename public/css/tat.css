@@ -310,7 +310,7 @@ html {
     border-top-right-radius: 5px !important;
 }
 #side-dropdowns-aqua {
-	width: 250px;
+	width: 100% !important;
 	height: 50px;
 	font-size: 18px;
 	background: #0a9ef4 !important;
