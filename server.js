@@ -22,10 +22,7 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 
 
-const PORT = process.env.PORT || 5000;
-
-
-
+var PORT = process.env.PORT || 5000;
 
 
 // Standard code for body-parser //
@@ -99,8 +96,9 @@ db.sequelize.sync({ force:false }).then(function() {
 
 app.listen(PORT, function(err){
     if(!err)
-    console.log("Site is live"); else console.log(err)
-  console.log('Nice! Database looks fine')
+      console.log("Site is live"); 
+    else console.log(err)
+      console.log('Nice! Database looks fine')
   }); 
     
  

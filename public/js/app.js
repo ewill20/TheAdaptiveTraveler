@@ -125,7 +125,7 @@ $('#sign-out').on('click', function() {
 
 // click listener and event handler for 'account' link //
 $('#account-link').on('click', function() {
-	window.location = '/profile'
+	window.location = '/profile';
 })
 
 $('#pop-destinations').on('click', function() {
