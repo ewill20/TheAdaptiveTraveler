@@ -35,6 +35,75 @@
                     </div>
                 </form>
             </div>
+            <!--/.Card-->
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels"
+                    type="button">Your Travels
+                    <span>
+                        <i class="fa fa-plane fa-4x ml-3"></i>
+                    </span>
+                </button>
+                
+
+                <!-- The Modal -->
+                <div id="login-window" class="modal">
+                    
+
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" id="login-form-window">
+                            <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        
+                        <div class="imgcontainer">
+                            <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
+                        </div>
+
+                        <div class="container-fluid" id="window">
+                            <label id="handle-label">
+                                <b>Handle</b>
+                            </label>
+                            <br />
+                            <input id="login-handle" type="text" placeholder="Enter Your Email" name="email" required>
+
+                            <label id="password-label">
+                                <b>Password</b>
+                            </label>
+                            <br />
+                            <input id="login-password" type="password" placeholder="Enter Password" name="password" required>
+                            <br />
+                            <button class="btn btn-default" id="send-button" type="submit">Login</button>
+                            <br />
+                            {{!-- <div id="checkbox">
+                                <input type="checkbox" checked="checked"> Remember Me
+                            </div> --}}
+                        </div>
+
+                        <div class="container-fluid text-center" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn"
+                                id="send-button">Cancel</button>
+                            <span class="psw">
+                                <a href="#">Forgot Password?</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- The button to open to open the modal -->
+                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
+                    type="button">Create A Profile
+                    <span>
+                        <i class="fa fa-user-circle fa-4x ml-3"></i>
+                    </span>
+                </button>
+                <!-- The Modal -->
+                <div id="create-window" class="modal">
+        </nav>
+    </div>
+    <div class="container-fluid" id="content">
+        <div class="row">
+            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+                <div class="dropdown">
+                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="side-dropdowns" data-toggle="dropdown">The "Good Good"
 
             <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
                 <li>
@@ -44,14 +113,7 @@
                     <a id="contact-about" class="ml-2" href="/about"> About</a>
                 </li>
             </ul>
-        </nav>
-    </div>
-    <div class="container-fluid" id="content">
-        <div class="row">
-            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-                <div class="dropdown">
-                    <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="side-dropdowns" data-toggle="dropdown">The "Good Good"
-
+            
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                         <li role="presentation">
@@ -173,7 +235,7 @@
                 <!--Card content-->
                     <div class="card-body text-center">
                     
-                        <h4 class="card-text">The most popular destinations in the world with all the information you need to know for your trip
+                        <h4 class="card-text" style="text-align:center">The most popular destinations in the world with all the information you need to know for your trip
                         </h4>
 
                         <a href="/berlin">
@@ -199,68 +261,7 @@
                 <!--/.Card content-->
 
                     </div>
-                <!--/.Card-->
-                </div>
-                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-4">
-                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels"
-                    type="button">Your Travels
-                    <span>
-                        <i class="fa fa-plane fa-4x ml-3"></i>
-                    </span>
-                </button>
                 
-
-                <!-- The Modal -->
-                <div id="login-window" class="modal">
-                    
-
-                    <!-- Modal Content -->
-                    <form class="modal-content animate" id="login-form-window">
-                            <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        
-                        <div class="imgcontainer">
-                            <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
-                        </div>
-
-                        <div class="container-fluid" id="window">
-                            <label id="handle-label">
-                                <b>Handle</b>
-                            </label>
-                            <br />
-                            <input id="login-handle" type="text" placeholder="Enter Your Email" name="email" required>
-
-                            <label id="password-label">
-                                <b>Password</b>
-                            </label>
-                            <br />
-                            <input id="login-password" type="password" placeholder="Enter Password" name="password" required>
-                            <br />
-                            <button class="btn btn-default" id="send-button" type="submit">Login</button>
-                            <br />
-                            {{!-- <div id="checkbox">
-                                <input type="checkbox" checked="checked"> Remember Me
-                            </div> --}}
-                        </div>
-
-                        <div class="container-fluid text-center" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn"
-                                id="send-button">Cancel</button>
-                            <span class="psw">
-                                <a href="#">Forgot Password?</a>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- The button to open to open the modal -->
-                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
-                    type="button">Create A Profile
-                    <span>
-                        <i class="fa fa-user-circle fa-4x ml-3"></i>
-                    </span>
-                </button>
-                <!-- The Modal -->
-                <div id="create-window" class="modal">
                     
 
                     <!-- Modal Content -->
