@@ -6,10 +6,8 @@ var passport = require('passport')
 var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv').load()
-var customEnv = require('env')
 var exphbs = require('express-handlebars')
 const path = require('path')
-var fs = require('fs')
 const mysql = require('mysql')
 var db = require("./models")
 
@@ -24,7 +22,7 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 
 
-var PORT = app.listen(process.env.PORT) || 5000;
+var PORT = process.env.PORT || 5000;
 
 
 // Standard code for body-parser //
