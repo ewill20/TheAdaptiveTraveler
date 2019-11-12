@@ -20,12 +20,12 @@ module.exports = function(app) {
 app.get('/landing', function(req, res) {
     result.sendFile(path.join(__dirname + '/../landing.hbs'));
 });
-  // findAll returns all entries for a table when used with no options
-  db.User.findAll({}).then(function(dbUser) {
-  // We have access to the todos as an argument inside of the callback function
-  res.json(dbUser);
-});
-};
+//   // findAll returns all entries for a table when used with no options
+//   db.User.findAll({}).then(function(dbUser) {
+//   // We have access to the todos as an argument inside of the callback function
+//   res.json(dbUser);
+// });
+// };
   // POST route for saving a new user
   app.post("/api/user", function(req, res) {
     // create takes an argument of an object describing the item we want to
@@ -81,4 +81,4 @@ app.get('/landing', function(req, res) {
     });
   });
 
-;
+};
