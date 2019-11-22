@@ -1,14 +1,14 @@
 {
     "development": {
         "username": "root",
-        "password": "EW141984",
+        "password": null,
         "database": "adaptive_traveler",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
         "username":"root",
-        "password": "EW141984",
+        "password": null,
         "database":"adaptive_traveler",
         "host":"127.0.0.1",
         "dialect":"mysql"

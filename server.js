@@ -6,10 +6,8 @@ var passport = require('passport')
 var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv').load()
-var customEnv = require('env')
 var exphbs = require('express-handlebars')
 const path = require('path')
-var fs = require('fs')
 const mysql = require('mysql')
 var db = require("./models")
 
@@ -24,7 +22,10 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 
 
-var PORT = app.listen(process.env.PORT) || 5000;
+const PORT = process.env.PORT || 5000;
+
+
+
 
 
 // Standard code for body-parser //
@@ -98,9 +99,8 @@ db.sequelize.sync({ force:false }).then(function() {
 
 app.listen(PORT, function(err){
     if(!err)
-      console.log("Site is live"); 
-    else console.log(err)
-      console.log('Nice! Database looks fine')
+    console.log("Site is live"); else console.log(err)
+  console.log('Nice! Database looks fine')
   }); 
     
  

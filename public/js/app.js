@@ -2,6 +2,26 @@ $(document).ready(function() {
 	console.log("The document is ready and raring to go!");
 });
 
+
+// function initMap() {
+// 	// Create a map object and specify the DOM element for display //
+// 	var map = new google.maps.Map(document.getElementById('map'), {
+//           center: {lat: 52.52000, lng: 13.4050},
+//           zoom: 8
+// })
+// };
+// "create profile" button click listener //
+// $("#create-profile").on("click", function() {
+// 	window.location = "/signup";
+// 	console.log("Going to create a new profile");
+// });
+
+// "Your Travels" click listener that will redirect user to login page //
+// $("#yourTravels").on("click", function() {
+// 	window.location = "/signin";
+// 	console.log("Going to login page");
+// });
+
 // "Let's Go" click listener and search event handler //
 $("#letsgo").on("click", function() {
 	
@@ -105,7 +125,7 @@ $('#sign-out').on('click', function() {
 
 // click listener and event handler for 'account' link //
 $('#account-link').on('click', function() {
-	window.location = '/profile';
+	window.location = '/profile'
 })
 
 $('#pop-destinations').on('click', function() {
