@@ -10,15 +10,13 @@
                 </a>
             </div>
             <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             <div class="input-group collapse navbar-collapse" id="navbarSupportedContent">
                 <form id="form-search" method="get" action="" role="form" class="form-inline">
                     <div class="form-group has-feedback">
                         <div class="input-group">
-                            <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore"
-                                id="search-text-input">
+                            <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
                             <span class="input-group-btn">
                                 <button id="letsgo" class="btn btn-default waves-effect" type="button">Let's Go!
                                     <span>
@@ -31,92 +29,91 @@
                                     <i class="fa fa-map-pin"></i>
                                 </span>
                             </button>
-                    </form>
-                </div>
+                </form>
+            </div>
 
-                <!-- The button to open to open the modal -->
-                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
-                    type="button">Create A Profile
-                    <span>
-                        <i class="fa fa-user"></i>
-                    </span>
-                </button>
-                <!-- The Modal -->
-                <div id="create-window" class="modal">
-                    
-
-                    <!-- Modal Content -->
-                    <form class="modal-content-login animate" role="form" id="create-form-window">
-                        
-                        <div class="container-fluid" id="window2">
-                            <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
-                            <div class="md-form">
-                                <i class="fa fa-id-card prefix grey-text"></i>
-                                <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
-                                <label for="first-name">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-id-card prefix grey-text"></i>
-                                <input type="text" class="form-control" id="last-name" placeholder="     Last Name" required>
-                                <label for="last-name">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-envelope prefix grey-text"></i>
-                                <input type="email" class="form-control" id="create-email" placeholder="     Email Address" required>
-                                <label for="create-email">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-map-marker prefix grey-text"></i>
-                                <input type="text" class="form-control" id="create-location" placeholder="     Enter Your Location" required>
-                                <label for="create-location">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-user prefix grey-text"></i>
-                                <input type="text" class="form-control" id="create-handle" placeholder="      Enter A Handle" required>
-                                <label for="create-handle">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-qrcode prefix grey-text"></i>
-                                <input type="password" class="form-control" id="create-password1" placeholder="     Please Enter A Password" required>
-                                <label for="create-password1">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-thumbs-o-up prefix grey-text"></i>
-                                <input type="password" class="form-control" id="confirm-password2" placeholder="     Please Confirm Your Password" required>
-                                <label for="confirm-password2">
-
-                                </label>
-                            </div>
-
-                            <button class="btn btn-default" id="send-button" type="submit">Submit</button>
-                    </form>
-                    </div>
+            <!-- The button to open to open the modal -->
+            <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile" type="button">Create A Profile
+                <span>
+                    <i class="fa fa-user"></i>
+                </span>
+            </button>
             <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
-                <li>
-                    <a id="contact-about" href="/contact">Contact | </a>
-                </li>
-                <li>
-                    <a id="contact-about" class="ml-2" href="/about"> About</a>
-                </li>
-            </ul>
+                    <li>
+                        <a id="contact-about" href="/contact">Contact | </a>
+                    </li>
+                    <li>
+                        <a id="contact-about" class="ml-2" href="/about"> About</a>
+                    </li>
+                </ul>
+            <!-- The Modal -->
+            <div id="create-window" class="modal">
+
+
+                <!-- Modal Content -->
+                <form class="modal-content-login animate" role="form" id="create-form-window">
+
+                    <div class="container-fluid" id="window2">
+                        <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
+                        <div class="md-form">
+                            <i class="fa fa-id-card prefix grey-text"></i>
+                            <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
+                            <label for="first-name">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-id-card prefix grey-text"></i>
+                            <input type="text" class="form-control" id="last-name" placeholder="     Last Name" required>
+                            <label for="last-name">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" class="form-control" id="create-email" placeholder="     Email Address" required>
+                            <label for="create-email">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-map-marker prefix grey-text"></i>
+                            <input type="text" class="form-control" id="create-location" placeholder="     Enter Your Location" required>
+                            <label for="create-location">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" class="form-control" id="create-handle" placeholder="      Enter A Handle" required>
+                            <label for="create-handle">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-qrcode prefix grey-text"></i>
+                            <input type="password" class="form-control" id="create-password1" placeholder="     Please Enter A Password" required>
+                            <label for="create-password1">
+
+                            </label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-thumbs-o-up prefix grey-text"></i>
+                            <input type="password" class="form-control" id="confirm-password2" placeholder="     Please Confirm Your Password" required>
+                            <label for="confirm-password2">
+
+                            </label>
+                        </div>
+
+                        <button class="btn btn-default" id="send-button" type="submit">Submit</button>
+                </form>
+            </div>
         </nav>
     </div>
     <div class="container-fluid" id="content">
@@ -230,22 +227,22 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-3 col-lg-offset-1 col-xl-4 col-xl-offset-4"
-                style="padding-left: 5px;">
-                
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-3 col-xl-4" style="padding-left: 5px; margin-left: 50px;">
+
                 <!--Card-->
-                    <div class="card card-cascade" id="card1">
+                <div class="card card-cascade" id="card1">
 
-                <!--Card image-->
-                <a href="/popDestinations">
-                    <div class="view gradient-card-header peach-gradient">
-                        <h2 class="h2-responsive">Popular Destinations</h2>
-                    </div></a>
-                <!--/Card image-->
+                    <!--Card image-->
+                    <a href="/popDestinations">
+                        <div class="view gradient-card-header peach-gradient">
+                            <h2 class="h2-responsive">Popular Destinations</h2>
+                        </div>
+                    </a>
+                    <!--/Card image-->
 
-                <!--Card content-->
+                    <!--Card content-->
                     <div class="card-body text-center">
-                    
+
                         <h4 class="card-text">The most popular destinations in the world with all the information you need to know for your trip
                         </h4>
 
@@ -269,16 +266,16 @@
                             <img style="width: 125px; height: 125px; float: right;" class="img-responsive" id="paris-corner" src="../Images/ParisOpéra.jpg">
                         </a>
                     </div>
-                <!--/.Card content-->
+                    <!--/.Card content-->
 
-                    </div>
+                </div>
                 <!--/.Card-->
-                </div>
-                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-4">
-                
-                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+
             </div>
         </div>
-        <footer class="footer">
-            © 2017 The Adaptive Traveler
-        </footer>
+    </div>
+    <footer class="footer">
+        © 2017 The Adaptive Traveler
+    </footer>
