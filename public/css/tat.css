@@ -9,6 +9,9 @@ div#content {
 	height: 100%;
 	
 }
+.h2-responsive {
+	text-align: center;
+}
 body {
 	width: 100%;
 	display: flex;
