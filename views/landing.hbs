@@ -31,11 +31,84 @@
                                     <i class="fa fa-map-pin"></i>
                                 </span>
                             </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
 
+                <!-- The button to open to open the modal -->
+                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
+                    type="button">Create A Profile
+                    <span>
+                        <i class="fa fa-user"></i>
+                    </span>
+                </button>
+                <!-- The Modal -->
+                <div id="create-window" class="modal">
+                    
+
+                    <!-- Modal Content -->
+                    <form class="modal-content-login animate" role="form" id="create-form-window">
+                        
+                        <div class="container-fluid" id="window2">
+                            <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
+                            <div class="md-form">
+                                <i class="fa fa-id-card prefix grey-text"></i>
+                                <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
+                                <label for="first-name">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-id-card prefix grey-text"></i>
+                                <input type="text" class="form-control" id="last-name" placeholder="     Last Name" required>
+                                <label for="last-name">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" class="form-control" id="create-email" placeholder="     Email Address" required>
+                                <label for="create-email">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-map-marker prefix grey-text"></i>
+                                <input type="text" class="form-control" id="create-location" placeholder="     Enter Your Location" required>
+                                <label for="create-location">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-user prefix grey-text"></i>
+                                <input type="text" class="form-control" id="create-handle" placeholder="      Enter A Handle" required>
+                                <label for="create-handle">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-qrcode prefix grey-text"></i>
+                                <input type="password" class="form-control" id="create-password1" placeholder="     Please Enter A Password" required>
+                                <label for="create-password1">
+
+                                </label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-thumbs-o-up prefix grey-text"></i>
+                                <input type="password" class="form-control" id="confirm-password2" placeholder="     Please Confirm Your Password" required>
+                                <label for="confirm-password2">
+
+                                </label>
+                            </div>
+
+                            <button class="btn btn-default" id="send-button" type="submit">Submit</button>
+                    </form>
+                    </div>
             <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
                 <li>
                     <a id="contact-about" href="/contact">Contact | </a>
@@ -202,131 +275,7 @@
                 <!--/.Card-->
                 </div>
                 <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-4">
-                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels"
-                    type="button">Your Travels
-                    <span>
-                        <i class="fa fa-plane"></i>
-                    </span>
-                </button>
                 
-
-                <!-- The Modal -->
-                <div id="login-window" class="modal">
-                    
-
-                    <!-- Modal Content -->
-                    <form class="modal-content animate" id="login-form-window">
-                            <span onclick="document.getElementById('login-window').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        
-                        <div class="imgcontainer">
-                            <img src="Images/default-avatar.png" alt="Avatar" class="avatar img-responsive center-block" id="login-avatar">
-                        </div>
-
-                        <div class="container-fluid" id="window">
-                            <label id="handle-label">
-                                <b>Handle</b>
-                            </label>
-                            <br />
-                            <input id="login-handle" type="text" placeholder="Enter Your Email" name="email" required>
-
-                            <label id="password-label">
-                                <b>Password</b>
-                            </label>
-                            <br />
-                            <input id="login-password" type="password" placeholder="Enter Password" name="password" required>
-                            <br />
-                            <button class="btn btn-default" id="send-button" type="submit">Login</button>
-                            <br />
-                            {{!-- <div id="checkbox">
-                                <input type="checkbox" checked="checked"> Remember Me
-                            </div> --}}
-                        </div>
-
-                        <div class="container-fluid text-center" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('login-window').style.display='none'" class="btn btn-default cancelbtn"
-                                id="send-button">Cancel</button>
-                            <span class="psw">
-                                <a href="#">Forgot Password?</a>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- The button to open to open the modal -->
-                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile"
-                    type="button">Create A Profile
-                    <span>
-                        <i class="fa fa-user"></i>
-                    </span>
-                </button>
-                <!-- The Modal -->
-                <div id="create-window" class="modal">
-                    
-
-                    <!-- Modal Content -->
-                    <form class="modal-content-login animate" role="form" id="create-form-window">
-                        
-                        <div class="container-fluid" id="window2">
-                            <span onclick="document.getElementById('create-window').style.display='none'" id="closeIt" title="Close Modal">&times;</span>
-                            <div class="md-form">
-                                <i class="fa fa-id-card prefix grey-text"></i>
-                                <input type="text" class="form-control" id="first-name" placeholder="     First Name" required>
-                                <label for="first-name">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-id-card prefix grey-text"></i>
-                                <input type="text" class="form-control" id="last-name" placeholder="     Last Name" required>
-                                <label for="last-name">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-envelope prefix grey-text"></i>
-                                <input type="email" class="form-control" id="create-email" placeholder="     Email Address" required>
-                                <label for="create-email">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-map-marker prefix grey-text"></i>
-                                <input type="text" class="form-control" id="create-location" placeholder="     Enter Your Location" required>
-                                <label for="create-location">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-user prefix grey-text"></i>
-                                <input type="text" class="form-control" id="create-handle" placeholder="      Enter A Handle" required>
-                                <label for="create-handle">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-qrcode prefix grey-text"></i>
-                                <input type="password" class="form-control" id="create-password1" placeholder="     Please Enter A Password" required>
-                                <label for="create-password1">
-
-                                </label>
-                            </div>
-
-                            <div class="md-form">
-                                <i class="fa fa-thumbs-o-up prefix grey-text"></i>
-                                <input type="password" class="form-control" id="confirm-password2" placeholder="     Please Confirm Your Password" required>
-                                <label for="confirm-password2">
-
-                                </label>
-                            </div>
-
-                            <button class="btn btn-default" id="send-button" type="submit">Submit</button>
-                    </form>
-                    </div>
                 </div>
             </div>
         </div>
