@@ -70,9 +70,10 @@ html {
 	
 }
 #yourTravels {
-	width: 300px !important;
+	width: 120px !important;
 	height: 50px !important;
-	font-size: 18px !important;
+	font-size: 10px !important;
+	margin-top: -36px;
 	background: #fecf75 !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
@@ -83,7 +84,7 @@ html {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
+	padding: 8px 15px 8px 15px;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -116,12 +117,11 @@ html {
     border-top-right-radius: 5px !important;
 }
 #pop-destinations-blue {
-	width: 245px !important;
+	width: 120px !important;
 	height: 50px !important;
-	font-size: 15px !important;
+	font-size: 10px !important;
 	margin-bottom: 0px;
 	margin-left: 20px;
-	margin-top: -45px;
 	background: #44c4f8 !important;
 	background-image: -webkit-linear-gradient(top, #44c4f8, #3144a2)!important;
 	background-image: -moz-linear-gradient(top, #44c4f8, #3144a2)!important;
@@ -198,6 +198,7 @@ html {
 	width: 120px !important;
 	height: 50px !important;
 	font-size: 10px !important;
+	margin-top: -36px;
 	background: #fecf75 !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
@@ -218,7 +219,7 @@ html {
 }
 .input-group {
 	/* margin-left: 15% !important; */
-	width: 350px !important;
+	/* width: 350px !important; */
 }
 @media (max-width: 992px) {
 	.input-group {
@@ -688,8 +689,8 @@ footer {
 .prefix~textarea {
 	margin-left: 0px !important;
 }
-.prefix~input {
-	margin-left: 0px !important;
+/* .prefix~input {
+	margin-left: 0px !important; */
 }
 #Contact-Header {
 	font-family: 'Fresca', sans-serif;
@@ -751,9 +752,9 @@ footer {
 	z-index: 3;
 }
 #closeIt {
-	position: relative;
+	position: absolute;
 	right: 25px;
-	left: 670px;
+	left: 1000px;
 	color: #777;
 	font-size: 20px;
 	z-index: 3;
@@ -797,6 +798,7 @@ close:focus
 	margin-right: 5%;	
 }
 #window2 {
+	max-width: -webkit-fill-available;
 	display: block !important;
 	/* text-align: center; */
 	display: inline-flex;

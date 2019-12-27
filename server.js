@@ -40,7 +40,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
     app.set('view engine', '.hbs');
 
 app.get('/', function(req, res){
-    res.render("landing");
+    res.render('landing');
   });
 app.get('/profile', function(req, res) {
   console.log(req.params.user);
