@@ -24,6 +24,20 @@ app.get('/paris', authController.paris);
 
 app.get('/popDestinations', authController.popDestinations);
 
+app.get('/SouthAmerica', authController.SouthAmerica);
+
+app.get('/Africa', authController.Africa);
+
+app.get('/Asia', authController.Asia);
+
+app.get('/Australia', authController.Australia);
+
+app.get('/Europe', authController.Europe);
+
+app.get('/NorthAmerica', authController.NorthAmerica);
+
+app.get('/photoLocations', authController.photoLocations);
+
 
 app.post('/landing', function(req, res, next) {
     console.log("whatever");

@@ -91,6 +91,18 @@ html {
 	border-top-right-radius: 5px !important;
 	
 }
+#photoLocationsCard, #card2 {
+	border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+#popDestinationsCard, #card1 {
+	border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
 #pop-destinations {
 	width: 120px !important;
 	height: 50px !important;
@@ -140,12 +152,12 @@ html {
     border-top-right-radius: 5px !important;
 }
 #pop-destinations-aqua {
-	width: 245px !important;
+	width: 120px !important;
 	height: 50px !important;
-	font-size: 15px !important;
+	font-size: 10px !important;
 	margin-bottom: 0px;
 	margin-left: 20px;
-	margin-top: -45px;
+	margin-top: -36px;
 	background: #0a9ef4 !important;
 	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
 	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
@@ -156,7 +168,7 @@ html {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
+	padding: 8px 15px 8px 15px;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -174,7 +186,6 @@ html {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -245,10 +256,7 @@ html {
     border-top-right-radius: 5px !important;   
 }
 #letsgo {
-	width: 85px;
-	height: 50px;
 	margin-top: 0px;
-	font-size: 12px !important;
 	background: #fecf75 !important;
 	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
 	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
@@ -259,7 +267,6 @@ html {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -267,21 +274,12 @@ html {
     border-top-right-radius: 5px !important;
 }
 #letsgo-berlin {
-	width: 85px;
-	height: 50px;
 	margin-top: 0px;
-	font-size: 12px !important;
-	background: #0a9ef4 !important;
-	background-image: -webkit-linear-gradient(top, #0a9ef4, #00f9a7)!important;
-	background-image: -moz-linear-gradient(top, #0a9ef4, #00f9a7)!important;
-	background-image: -ms-linear-gradient(top, #0a9ef4, #00f9a7)!important;
-	background-image: -o-linear-gradient(top, #0a9ef4, #00f9a7)!important;
-	background-image: linear-gradient(to bottom, #0a9ef4, #00f9a7)!important;
+	background: red !important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
-	color: #ffffff;
-	padding: 8px 20px 8px 20px;
+	color: #ff0000;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -289,7 +287,6 @@ html {
     border-top-right-radius: 5px !important;
 }
 #side-dropdowns {
-	width: 250px;
 	height: 50px;
 	font-size: 15px;
 	background: #fecf75 !important;
@@ -371,10 +368,7 @@ html {
     border-top-right-radius: 5px !important;
 }
 #letsgo-about {
-	width: 85px;
-	height: 50px;
 	margin-top: 0px;
-	font-size: 12px !important;
 	background: #44c4f8 !important;
 	background-image: -webkit-linear-gradient(top, #44c4f8, #3144a2)!important;
 	background-image: -moz-linear-gradient(top, #44c4f8, #3144a2)!important;
@@ -385,7 +379,6 @@ html {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
 	text-decoration: none;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -480,7 +473,7 @@ input {
 	border-bottom: solid #1e4be2 2px;
 }
 #berlin-nav {
-	border-bottom: solid #00f9a7 2px;
+	border-bottom: red;
 }
 #contact-about {
 	color: white;
@@ -674,7 +667,7 @@ footer {
 	border-top: solid #1e4be2 2px;
 }
 #berlin-footer {
-	border-top: solid #0a9ef4 2px;
+	border-top: red;
 }
 #form8 {
 	width: 100%;
@@ -688,9 +681,7 @@ footer {
 .prefix~textarea {
 	margin-left: 0px !important;
 }
-/* .prefix~input {
-	margin-left: 0px !important; */
-}
+
 #Contact-Header {
 	font-family: 'Fresca', sans-serif;
 	color: #777;
@@ -859,4 +850,17 @@ close:focus
 #small-paris {
 	margin-top: -30px;
 	
+}
+
+.southAmericaLanding, .africaLanding, .australiaLanding {
+	margin-left: 15px;
+}
+.europeLanding  {
+	margin-left: 15px;
+}
+.asiaLanding {
+	margin-left: 25px;
+}
+.northAmericaLanding {
+	margin-left: 25px;
 }
