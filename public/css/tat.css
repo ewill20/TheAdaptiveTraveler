@@ -11,6 +11,7 @@ div#content {
 }
 .h2-responsive {
 	text-align: center;
+	margin-top: 15px;
 }
 body {
 	width: 100%;
@@ -409,12 +410,10 @@ input {
 	width: 100px !important;
 }
 .navbar {
-	height: 100px;
+	height: 80px;
 	position: fixed;
-	margin-bottom: 20px;
 	z-index: 1;
-	/* width: 100%; */
-	margin-bottom: 40px !important;
+
 }
 
 @media (max-width: 1170px) {
@@ -826,7 +825,7 @@ close:focus
 	margin-top: 10px;
 }
 #card1 {
-	width: 300px;
+	
 }
 .card-body {
 	display: inline !important;
@@ -853,14 +852,14 @@ close:focus
 }
 
 .southAmericaLanding, .africaLanding, .australiaLanding {
-	margin-left: 15px;
+	margin-left: 20px;
 }
 .europeLanding  {
-	margin-left: 15px;
+	margin-left: 20px;
 }
 .asiaLanding {
-	margin-left: 25px;
+	margin-left: 20px;
 }
 .northAmericaLanding {
-	margin-left: 25px;
+	margin-left: 20px;
 }
