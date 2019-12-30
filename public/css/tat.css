@@ -824,8 +824,16 @@ close:focus
 #checkbox {
 	margin-top: 10px;
 }
-#card1 {
-	
+.third-row {
+	width: 100% !important;
+	margin: 15px 15px 15px 15px;
+}
+#card4 {
+	margin-left: 30px;
+	border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
 }
 .card-body {
 	display: inline !important;
@@ -850,7 +858,10 @@ close:focus
 	margin-top: -30px;
 	
 }
-
+.reviews-photos {
+	padding: 10px 5px 0px 10px;
+	width: 220px;
+}
 .southAmericaLanding, .africaLanding, .australiaLanding {
 	margin-left: 20px;
 }
@@ -862,4 +873,11 @@ close:focus
 }
 .northAmericaLanding {
 	margin-left: 20px;
+}
+.text-wrap {
+	width: 210px;
+	overflow: auto;
+}
+.athens-review {
+	width: 230px;
 }
