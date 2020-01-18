@@ -38,6 +38,7 @@ app.get('/NorthAmerica', authController.NorthAmerica);
 
 app.get('/photoLocations', authController.photoLocations);
 
+app.get('/traveler1', authController.traveler1);
 
 app.post('/landing', function(req, res, next) {
     console.log("whatever");

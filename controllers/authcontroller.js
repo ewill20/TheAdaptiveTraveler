@@ -77,6 +77,10 @@ exports.Australia = function(req,res){
 
 	res.render('Australia'); 
 }
+exports.traveler1 = function(req,res){
+
+	res.render('traveler1'); 
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
