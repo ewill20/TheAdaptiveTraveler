@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <style>
-    #container {
-      width: 600px;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
-    }
- 
-    .circle {
-      border-radius: 50%;
-      background-color: #eb2c1e;
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      opacity: 0;
-    }
- 
-    .item {
-      z-index: 100;
-      padding: 5px;
-    }
- 
-    .item img {
-      width: 150px;
-    }
-  </style>
-  <div id="content" class="landing-background">
-    <div class="container-fluid">
-        <nav class="navbar navbar-collapse navbar-expand-lg peach-gradient" id="landing-nav">
+<!DOCTYPE html> 
+  <div id="content">
+    <div class="container-fluid" "landing-background">
+        <nav class="navbar navbar-collapse navbar-expand-lg mr-auto" id="landing-nav">
             <div class="navbar-header" id="landing-header">
                 <a href="/landing">
-                    <img src="/Images/TATLogoDone1.png" id="tatlogo">
+                    <img class="ml-auto" src="/Images/TATLogoDone1.png" id="tatlogo">
                 </a>
                 <a href="/landing">
                     <h2 class="navbar-brand">The Adaptive Traveler</h2>
@@ -58,14 +27,12 @@
                                     </span>
                                 </button>
                             </span>
-                            <button class="btn btn-default" id="pop-destinations" type="button">Popular Destinations
-                                <span>
-                                    <i class="fa fa-map-pin fa-2x"></i>
-                                </span>
-                            </button>
                         </div>
+                    </div>   
                 </form>
-                <!-- The button to open to open the modal -->
+               
+            </div>
+             <!-- The button to open to open the modal -->
                 <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile" type="button">Create A Profile
                     <span>
                         <i class="fa fa-user fa-2x"></i>
@@ -77,15 +44,17 @@
                         <i class="fa fa-plane fa-2x ml-3"></i>
                     </span>
                 </button>
-            </div>
-            <ul class="navbar-nav navbar-right mr-auto" id="nav-links">
-                <li>
-                    <a id="contact-about" href="/contact">Contact | </a>
-                </li>
-                <li>
-                    <a id="contact-about" class="ml-2" href="/about"> About</a>
-                </li>
-            </ul>
         </nav>
     </div>
+    <div id="outerContainer">
+    <div id="container">
+      <div class="item">
+        <img src="../images/TATLogoDone1.png" />
+      </div>
+      <div class="circle" style="animation-delay: -3s"></div>
+      <div class="circle" style="animation-delay: -2s"></div>
+      <div class="circle" style="animation-delay: -1s"></div>
+      <div class="circle" style="animation-delay: 0s"></div>
+    </div>
+  </div>
     </head>

@@ -29,7 +29,37 @@
     <script rel="stylesheet" type="text/hbs" src="/views/landing.hbs"></script>
     <script rel="stylesheet" type="text/hbs" src="/views/signin.hbs"></script>
     <script rel="stylesheet" type="text/hbs" src="/views/singup.hbs"></script> 
-
+<html>
+    <head>
+        <style>
+    #container {
+      width: 600px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+ 
+    .circle {
+      border-radius: 50%;
+      background-color: #eb2c1e;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      opacity: 0;
+    }
+ 
+    .item {
+      z-index: 100;
+      padding: 5px;
+    }
+ 
+    .item img {
+      width: 150px;
+    }
+  </style>
 </head>
 
 <body>

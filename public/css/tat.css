@@ -6,7 +6,7 @@ html, body {
 	overflow-x: hidden;
 }
 div#content {
-	height: 100%;
+	height: 75%;
 	
 }
 .h2-responsive {
@@ -19,8 +19,9 @@ body {
 	flex-direction: column;
 }
 .landing-background {
-	background-image: url("../Images/CNZhangjiajie6.jpg") !important; 
+	background-image: url("../Images/NLGroningenColors1.jpg") !important; 
 	background-size: cover !important;
+
 }
 .about-background {
 	background-image: url("../Images/CNShadowKnight.jpg") !important;
@@ -881,3 +882,22 @@ close:focus
 .athens-review {
 	width: 230px;
 }
+.circle {
+	border-radius: 50%;
+	background-color: deepskyblue;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	opacity: 0;
+	animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+  @keyframes scaleIn {
+	from {
+	  transform: scale(.5, .5);
+	  opacity: .5;
+	}
+	to {
+	  transform: scale(2.5, 2.5);
+	  opacity: 0;
+	}
+  }
