@@ -899,7 +899,7 @@ close:focus
 	width: 230px;
 }
 #container {
-	height: 700px;
+	height: 650px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -935,7 +935,7 @@ close:focus
 	}
   }
   .item2 img {
-	width: 100px;
+	width: 125px;
 	margin-top: -500px;
   }
   .item2 {
@@ -971,6 +971,15 @@ close:focus
   position: absolute;
   opacity: 0;
   animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.item3 img {
+	width: 150px;
+	margin-top: -500px;
+	height: 130px;
+  }
+.item3 {
+	z-index: 1;
+	padding: 5px;
 }
 .circle5 {
 	margin-top: -250px;
