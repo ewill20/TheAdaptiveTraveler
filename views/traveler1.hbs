@@ -3,11 +3,13 @@
     <div class="container-fluid" "landing-background">
         <nav class="navbar navbar-collapse navbar-expand-lg mr-auto" id="landing-nav">
             <div class="navbar-header" id="landing-header">
+                
                 <a href="/landing">
-                    <h2 class="navbar-brand">"Bringing the world together one</br>cultural tidbit at a time..."</h2>
-                    <img class="ml-auto" src="/Images/TATLogoDone1.png" id="tatlogo">
+                    <h2 class="navbar-brand"><img id="tatlogo" src="/Images/TATLogoDone1.png"></h2>
+                     
                 </a>
             </div>
+            
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -17,7 +19,7 @@
                 <form id="form-search" method="get" action="" role="form" class="form-inline">
                     <div class="form-group has-feedback">
                         <div class="input-group">
-                            <input style="color: #e7e7e7 !important;" type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
+                            <input type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
                             <span class="input-group-btn">
                                 <button id="letsgo" class="btn btn-default waves-effect" type="button">Let's Go!
                                     <span>
@@ -26,22 +28,25 @@
                                 </button>
                             </span>
                         </div>
+                        
                     </div>   
                 </form>
                
             </div>
-             <!-- The button to open to open the modal -->
-                <button onclick="document.getElementById('create-window').style.display='block'" class="btn btn-default" id="create-profile" type="button">Create A Profile
+             <!-- Register for account button -->
+             <a href="/signup">
+                <button class="btn btn-default" id="create-profile" type="button">Create A Profile
                     <span>
                         <i class="fa fa-user fa-2x"></i>
                     </span>
-                </button>
-
-                <button onclick="document.getElementById('login-window').style.display='block'" class="btn btn-default" id="yourTravels" type="button">Your Travels
+                </button></a>
+                <!-- login to your account button-->
+                <a href="/signin">
+                <button class="btn btn-default" id="yourTravels" type="button">Your Travels
                     <span>
                         <i class="fa fa-plane fa-2x ml-3"></i>
                     </span>
-                </button>
+                </button></a>
         </nav>
     </div>
     <div id="outerContainer">

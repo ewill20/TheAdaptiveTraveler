@@ -21,6 +21,7 @@ body {
 .landing-background {
 	background-image: url("../Images/NLGroningenColors1.jpg") !important; 
 	background-size: cover !important;
+	height: 700px;
 
 }
 .about-background {
@@ -199,7 +200,7 @@ html {
 }
 
 #explore {
-	width: auto;
+	width: auto !important;
 	color: #e7e7e7;
 	padding-bottom: 12px;
 	margin-top: 20px;
@@ -273,7 +274,8 @@ html {
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
-    border-top-right-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+	width: 170% !important;
 }
 #letsgo-berlin {
 	margin-top: 0px;
@@ -397,7 +399,7 @@ input[type="text"]#explore::-webkit-input-placeholder {
 	padding-bottom: 0px;
 }
 input { 
-	/* width: 90% !important; */
+	width: 90% !important;
 	font-size: 15px !important;
 }
 #username {
@@ -409,10 +411,17 @@ input {
 }
 #login-button {
 	margin-left: 34% !important;
+	margin-top: 30px;;
 	width: 100px !important;
+	background-image: -webkit-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -moz-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -ms-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -o-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: linear-gradient(to bottom, #f2f8fc, #eb2c1e)!important;
 }
 .navbar {
 	height: 80px;
+	margin-bottom: 0px !important;
 	position: fixed;
 	z-index: 1;
 
@@ -442,14 +451,15 @@ input {
 .navbar-brand {
 	padding: 0px !important;
 	margin-left: 20px !important;
-	color: white !important;
+	color: #eb2c1e;
 	font-size: 25px !important;
 }
 #tatlogo {
-	height: 80px;
+	padding: 10px 0 10px 0;
+	height: 140px;
 	position: relative;
-	top: -9px;
-	margin-left: -200px !important;
+	top: -25px;
+
 }
 #landing-header {
 	margin-top: 20px;
@@ -488,8 +498,9 @@ input {
 	font-size: 20px;
 }
 #create-profile-panel {
-	width: 400px;
+	width: 100%;
 	margin-bottom: 200px;
+	margin-top: 35px;
 }
 #create-profile-header {
 	font-family: 'Fresca', sans-serif;
@@ -524,9 +535,10 @@ input {
 	margin-left: 5px;
 	margin-right: 5px;
 	width: 400px;
-	height: 175px !important;
+	height: 220px !important;
 	border: none !important;
 	align-content: center !important;
+	margin-top: 40px;
 }
 .login-panel {
 	margin-bottom: 0 !important;
@@ -548,6 +560,7 @@ input {
 }
 #email {
 	padding-left: 30px;
+	max-width: 100%;
 }
 #location {
 	padding-left: 30px;

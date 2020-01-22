@@ -446,6 +446,7 @@ input {
 	font-size: 15px !important;
 }
 #tatlogo {
+	padding: 10px 0 10px 0;
 	height: 80px;
 	position: relative;
 	top: -9px;
@@ -488,6 +489,7 @@ input {
 	font-size: 20px;
 }
 #create-profile-panel {
+	margin-top: 35px;
 	width: 400px;
 	margin-bottom: 200px;
 }
