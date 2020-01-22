@@ -22,6 +22,7 @@ body {
 	background-image: url("../Images/NLGroningenColors1.jpg") !important; 
 	background-size: cover !important;
 	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
 	
 }
 .about-background {
@@ -420,11 +421,11 @@ input {
 	background-image: linear-gradient(to bottom, #f2f8fc, #eb2c1e)!important;
 }
 .navbar {
-	height: 80px;
+	height: 100px;
 	margin-bottom: 0px !important;
 	position: fixed;
 	z-index: 1;
-
+	padding: 15px 5px 10px 5px; 
 }
 
 @media (max-width: 1170px) {
@@ -897,11 +898,28 @@ close:focus
 .athens-review {
 	width: 230px;
 }
+#container {
+	height: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	
+  }
+  .item {
+	z-index: 100;
+	padding: 5px;
+  }
+
+  .item img {
+	width: 150px;
+  }
 .circle {
 	border-radius: 50%;
-	background-color: deepskyblue;
-	width: 150px;
-	height: 150px;
+	background-color: #eb2c1e;
+	width: 225px;
+	height: 225px;
 	position: absolute;
 	opacity: 0;
 	animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
@@ -912,7 +930,75 @@ close:focus
 	  opacity: .5;
 	}
 	to {
-	  transform: scale(2.5, 2.5);
+	  transform: scale(1.75, 1.75);
 	  opacity: 0;
 	}
   }
+  .item2 img {
+	width: 100px;
+	margin-top: -500px;
+  }
+  .item2 {
+	  z-index: 1;
+	  padding: 5px;
+  }
+  .circle2 {
+	  margin-top: -250px;
+	border-radius: 50%;
+	background-color: #8ea7ab;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	opacity: 0;
+	animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+  .circle3 {
+	  margin-top: -250px;
+	border-radius: 50%;
+	background-color: #0f9dd5;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	opacity: 0;
+	animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+  .circle4 {
+	margin-top: -250px;
+  border-radius: 50%;
+  background-color: #e8410e;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.circle5 {
+	margin-top: -250px;
+  border-radius: 50%;
+  background-color: #ed6f00;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.circle6 {
+	margin-top: -250px;
+  border-radius: 50%;
+  background-color: #833327;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.circle7 {
+	margin-top: -250px;
+  border-radius: 50%;
+  background-color: #003d92;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
