@@ -40,6 +40,10 @@ app.get('/photoLocations', authController.photoLocations);
 
 app.get('/traveler1', authController.traveler1);
 
+app.get('/signin', authController.signin);
+
+app.get('/signup', authController.signup);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');

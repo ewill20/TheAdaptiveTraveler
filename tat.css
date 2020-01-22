@@ -442,7 +442,7 @@ input {
 .navbar-brand {
 	padding: 0px !important;
 	margin-left: 20px !important;
-	color: #eb2c1e;
+	color: #eb2c1e !important;
 	font-size: 15px !important;
 }
 #tatlogo {
