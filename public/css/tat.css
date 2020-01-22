@@ -22,7 +22,7 @@ body {
 	background-image: url("../Images/NLGroningenColors1.jpg") !important; 
 	background-size: cover !important;
 	height: 700px;
-
+	
 }
 .about-background {
 	background-image: url("../Images/CNShadowKnight.jpg") !important;
@@ -279,7 +279,7 @@ html {
 }
 #letsgo-berlin {
 	margin-top: 0px;
-	background: red !important;
+	background: #eb2c1e !important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
@@ -479,6 +479,7 @@ input {
 }
 #landing-nav {
 	border-bottom: solid #eb2c1e 2px;
+	border-bottom: 5px solid #eb2c1e;
 }
 #about-nav {
 	border-bottom: solid #1e4be2 2px;
@@ -614,7 +615,7 @@ input {
 .media {
 	padding-top: 67px;
 	padding-bottom: 67px;
-	color: #ff5800;
+	color: #eb2c1e;
 	text-shadow: -1px 0 #e7e7e7, 0 1px #e7e7e7, 1px 0 #e7e7e7, 0 -1px #e7e7e7;
 	
 }
@@ -668,7 +669,7 @@ h1 {
 footer {
 	background-color: #9c9c9c; 
 	color: white; 
-	border-top: solid #fb6966 2px; 
+	border-top: solid #eb2c1e 2px; 
 	text-align: center; 
 	padding: 15px 200px 15px 200px;
 	position: absolute !important;
@@ -766,13 +767,13 @@ footer {
 closeIt:hover,
 closeIt:focus 
 {
-	color: #ff5800;
+	color: #eb2c1e;
 	cursor: pointer;
 }
 close:hover,
 close:focus
 {
-	color: #ff5800;
+	color: #eb2c1e;
 	cursor: pointer;
 }
 
