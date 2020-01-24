@@ -202,7 +202,7 @@ html {
 
 #explore {
 	width: auto !important;
-	color: #e7e7e7;
+	color: #eb2c1e;
 	padding-bottom: 12px;
 	margin-top: 20px;
 }
@@ -250,9 +250,12 @@ html {
 	background-color: #eb2c1e !important;
 	color: white !important; 
 	font-weight: 345 !important;
-    background: -webkit-linear-gradient(#ff670f 0%, #eb2c1e 100%)!important;
-    background: -o-linear-gradient(#ff670f 0%, #eb2c1e 100%)!important;
-    background: linear-gradient(#ff670f 0%, #eb2c1e 100%)!important; 
+    background: #f2f8fc !important;
+	background-image: -webkit-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -moz-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -ms-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -o-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: linear-gradient(to bottom, #f2f8fc, #eb2c1e)!important; 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb2c1e', endColorstr='#eb2c1e',GradientType=0 )!important;
     border-top-left-radius: 5px !important;
     border-bottom-left-radius: 5px !important;
@@ -511,13 +514,12 @@ input {
 }
 #creating-profile {
 	margin-top: 30px;
-	margin-left: 34%;
-	background: #fecf75 !important;
-	background-image: -webkit-linear-gradient(top, #fecf75, #fb6966)!important;
-	background-image: -moz-linear-gradient(top, #fecf75, #fb6966)!important;
-	background-image: -ms-linear-gradient(top, #fecf75, #fb6966)!important;
-	background-image: -o-linear-gradient(top, #fecf75, #fb6966)!important;
-	background-image: linear-gradient(to bottom, #fecf75, #fb6966)!important;
+	background: #f2f8fc !important;
+	background-image: -webkit-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -moz-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -ms-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: -o-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
+	background-image: linear-gradient(to bottom, #f2f8fc, #eb2c1e)!important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
@@ -961,4 +963,12 @@ close:focus
 .item4 {
 	z-index: 1;
 	padding: 5px;
+}
+.flag {
+	height: 75px;
+	width: 100px;
+}
+.flag-icon {
+	margin: 10px 10px 10px 10px;
+	border: 1px solid black;
 }

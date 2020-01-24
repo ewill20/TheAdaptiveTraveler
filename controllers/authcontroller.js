@@ -89,6 +89,10 @@ exports.signup = function(req,res){
 
 	res.render('signup'); 
 }
+exports.languageSelector = function(req,res){
+
+	res.render('languageSelector'); 
+}
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {

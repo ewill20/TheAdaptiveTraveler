@@ -44,6 +44,8 @@ app.get('/signin', authController.signin);
 
 app.get('/signup', authController.signup);
 
+app.get('/languageSelector', authController.languageSelector);
+
 app.post('/landing', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
