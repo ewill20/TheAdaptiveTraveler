@@ -9,10 +9,6 @@ exports.traveler1 = function(req,res){
 
 	res.render('traveler1'); 
 }
-// exports.landing = function(req,res){
-
-// 	res.render('landing'); 
-// }
 exports.about = function(req,res) {
 
   res.render('about');

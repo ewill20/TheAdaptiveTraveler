@@ -6,8 +6,6 @@ module.exports = function(app,passport){
 
 app.get('/traveler1', authController.traveler1);
 
-// app.get('/landing', authController.landing);
-
 app.get('/about', authController.about);
 
 app.get('/contact', authController.contact);

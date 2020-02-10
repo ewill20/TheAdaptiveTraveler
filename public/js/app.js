@@ -120,7 +120,7 @@ $("#creating-profile").on("click", function() {
 // click listener and event handler for 'sign out' link //
 $('#sign-out').on('click', function() {
 	alert('You have been signed out');
-	window.location = '/landing';
+	window.location = '/traveler1';
 });
 
 // click listener and event handler for 'account' link //
