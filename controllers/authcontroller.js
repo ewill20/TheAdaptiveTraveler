@@ -81,14 +81,6 @@ exports.traveler1 = function(req,res){
 
 	res.render('traveler1'); 
 }
-exports.signin = function(req,res){
-
-	res.render('signin'); 
-}
-exports.signup = function(req,res){
-
-	res.render('signup'); 
-}
 exports.languageSelector = function(req,res){
 
 	res.render('languageSelector'); 
