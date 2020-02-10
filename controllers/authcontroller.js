@@ -88,7 +88,7 @@ exports.languageSelector = function(req,res){
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {
-  res.redirect('/landing');
+  res.redirect('/traveler1');
   });
 
 }

@@ -42,7 +42,7 @@ app.get('/traveler1', authController.traveler1);
 
 app.get('/languageSelector', authController.languageSelector);
 
-app.post('/landing', function(req, res, next) {
+app.post('/traveler1', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
     // passport.authenticate('local-signup', function(err, user, info) {
