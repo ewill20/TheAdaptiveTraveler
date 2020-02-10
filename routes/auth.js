@@ -4,7 +4,9 @@ var authController = require('../controllers/authcontroller.js');
 
 module.exports = function(app,passport){
 
-app.get('/landing', authController.landing);
+app.get('/traveler1', authController.traveler1);
+
+// app.get('/landing', authController.landing);
 
 app.get('/about', authController.about);
 
@@ -37,8 +39,6 @@ app.get('/Europe', authController.Europe);
 app.get('/NorthAmerica', authController.NorthAmerica);
 
 app.get('/photoLocations', authController.photoLocations);
-
-app.get('/traveler1', authController.traveler1);
 
 app.get('/languageSelector', authController.languageSelector);
 

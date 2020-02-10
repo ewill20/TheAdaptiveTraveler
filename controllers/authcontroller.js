@@ -5,10 +5,14 @@ exports.main = function (req,res) {
 
   res.render('main');  
 }
-exports.landing = function(req,res){
+exports.traveler1 = function(req,res){
 
-	res.render('landing'); 
+	res.render('traveler1'); 
 }
+// exports.landing = function(req,res){
+
+// 	res.render('landing'); 
+// }
 exports.about = function(req,res) {
 
   res.render('about');
@@ -76,10 +80,6 @@ exports.photoLocations = function(req,res){
 exports.Australia = function(req,res){
 
 	res.render('Australia'); 
-}
-exports.traveler1 = function(req,res){
-
-	res.render('traveler1'); 
 }
 exports.languageSelector = function(req,res){
 
