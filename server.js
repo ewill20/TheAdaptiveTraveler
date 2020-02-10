@@ -41,7 +41,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
     app.set('view engine', '.hbs');
 
 app.get('/', function(req, res){
-    res.render('landing');
+    res.render('traveler1');
   });
 app.get('/profile', function(req, res) {
   console.log(req.params.user);
@@ -74,7 +74,7 @@ app.get('/', function(req, res) {
 
   res.send('Welcome')
 
-  res.render(path.join(__dirname, "landing.hbs"))
+  res.render(path.join(__dirname, "traveler1.hbs"))
 });
 app.get('/about', function(req, res) {
   res.render(path.join(__dirname, "about.hbs"))
@@ -107,6 +107,6 @@ app.listen(PORT, function(err){
  
 }).catch(function(err) {
  
-    console.log(err, "Something went wrong with the Database Update!")
+    console.log(err, "Something Went Wrong With The Database Update!")
  
 });
