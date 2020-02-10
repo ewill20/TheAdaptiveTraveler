@@ -231,10 +231,7 @@ html {
 	border-top-right-radius: 5px !important;
 	
 }
-.input-group {
-	/* margin-left: 15% !important; */
-	/* width: 350px !important; */
-}
+
 @media (max-width: 992px) {
 	.input-group {
 		display: none !important;

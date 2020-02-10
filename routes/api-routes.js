@@ -14,11 +14,11 @@ module.exports = function(app) {
 
   // GET route for getting all of the users
   app.get('/', function(req, res) {
-    result.sendFile(path.join(__dirname + '/../landing.hbs'));
+    result.sendFile(path.join(__dirname + '/../traveler1.hbs'));
 });
 
-app.get('/landing', function(req, res) {
-    result.sendFile(path.join(__dirname + '/../landing.hbs'));
+app.get('/traveler1', function(req, res) {
+    result.sendFile(path.join(__dirname + '/../traveler1.hbs'));
 });
   //   // findAll returns all entries for a table when used with no options
   //   db.User.findAll({}).then(function(dbUser) {
