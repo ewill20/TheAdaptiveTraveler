@@ -6,7 +6,7 @@ var fs = require('graceful-fs')
 var passport = require('passport')
 var session = require('express-session')
 var bodyParser = require('body-parser')
-var env = require('dotenv').load()
+var env = require('dotenv')
 var exphbs = require('express-handlebars')
 const path = require('path')
 const mysql = require('mysql')
@@ -93,7 +93,7 @@ app.get('/about', function(req, res) {
 // This points our server in the right direction via a series of "routes" //
 // =======================================================================//
 // Function to handle requests and responses //
-var env = require('dotenv').load();
+var env = require('dotenv');
  
 //Sync Database
 db.sequelize.sync({ force:false }).then(function() {
