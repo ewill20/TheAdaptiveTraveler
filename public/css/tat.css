@@ -1,15 +1,8 @@
-font-family: 'Sriracha', cursive;
-font-family: 'Righteous', cursive;
-font-family: 'Patua One', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Istok Web', sans-serif;
-font-family: 'Knewave', cursive;
-font-family: 'Concert One', cursive;
-font-family: 'Philosopher', sans-serif;
-
 #slogan {
 	font-family: 'Philosopher', sans-serif;
 	font-size: 14pt;
+	color: #eb2c1e;
+	margin-right: 75px;
 }
 
 html, body {
@@ -88,6 +81,7 @@ html {
 	
 }
 #yourTravels {
+	font-family: 'Sriracha', cursive;
 	width: 120px !important;
 	height: 50px !important;
 	font-size: 10px !important;
@@ -219,11 +213,13 @@ html {
 	color: #eb2c1e;
 	padding-bottom: 12px;
 	margin-top: 20px;
+	font-family: 'Sriracha', cursive;
 }
 #signup-col {
 	padding-left: 0 !important;
 }
 #create-profile {
+	font-family: 'Sriracha', cursive;
 	width: 120px !important;
 	height: 50px !important;
 	font-size: 10px !important;
@@ -275,6 +271,7 @@ html {
 }
 #letsgo {
 	margin-top: 0px;
+	font-family: 'Sriracha', cursive;
 	background: #f2f8fc !important;
 	background-image: -webkit-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
 	background-image: -moz-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
@@ -290,7 +287,6 @@ html {
     border-bottom-left-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
 	border-top-right-radius: 5px !important;
-	width: 170% !important;
 }
 #letsgo-berlin {
 	margin-top: 0px;
@@ -452,11 +448,11 @@ input {
 		display: none;
 	}
 }
-@media (max-width: 1025px) {
+/* @media (max-width: 1025px) {
 	.input-group {
 		width: 200px !important;
 	}
-}
+} */
 @media (max-width: 768px) {
 	#map-window, #german-language {
 		width: 100% !important;
