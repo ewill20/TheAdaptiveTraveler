@@ -1,3 +1,17 @@
+font-family: 'Sriracha', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Knewave', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Philosopher', sans-serif;
+
+#slogan {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 14pt;
+}
+
 html, body {
 	min-height: 100%;
 	min-width: 100%;
