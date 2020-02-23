@@ -398,7 +398,7 @@ input[type="text"]#explore::-webkit-input-placeholder {
 	color: white !important;
 	font-size: 25px !important;
 	width: auto;
-	opacity: 85%;
+	opacity: 100%;
 	text-align: center;
 	padding-bottom: 0px;
 }
