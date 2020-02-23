@@ -2,7 +2,6 @@
 	font-family: 'Philosopher', sans-serif;
 	font-size: 14pt;
 	color: #eb2c1e;
-	margin-right: 75px;
 }
 
 html, body {
@@ -73,9 +72,9 @@ html {
 /*.form-control {
 	width: 50px !important;	
 }*/
-#form-search {
+/* #form-search {
 	width: 200px;
-}
+} */
 #your-travels {
 	padding-left: 0;
 	
@@ -210,7 +209,7 @@ html {
 
 #explore {
 	width: auto !important;
-	color: #eb2c1e;
+	color: white;
 	padding-bottom: 12px;
 	margin-top: 20px;
 	font-family: 'Sriracha', cursive;
@@ -402,10 +401,10 @@ html {
 }
 
 input[type="text"]#explore::-webkit-input-placeholder {
-	color: #eb2c1e !important;
-	font-size: 18px !important;
+	color: white !important;
+	font-size: 25px !important;
 	width: auto;
-	opacity: 60%;
+	opacity: 85%;
 	text-align: center;
 	padding-bottom: 0px;
 }
