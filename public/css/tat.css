@@ -962,3 +962,6 @@ close:focus
 	margin: 10px 10px 10px 10px;
 	border: 1px solid black;
 }
+.flag-icon {
+	border: white solid 1px;
+}
