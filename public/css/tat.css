@@ -203,9 +203,9 @@ html {
 
 #explore {
 	width: auto !important;
-	color: white;
-	padding-bottom: 12px;
-	margin-top: 20px;
+	color: black;
+	padding-bottom: 8px;
+	font-size: 30px !important;
 	font-family: 'Sriracha', cursive;
 }
 #signup-col {
@@ -235,7 +235,7 @@ html {
 	
 }
 
-@media (max-width: 992px) {
+@media (max-width: 599px) {
 	.input-group {
 		display: none !important;
 	}
@@ -436,14 +436,9 @@ input {
 	display: none;
 }
 }
-@media (max-width: 1025px) {
+/* @media (max-width: 1025px) {
 	#pop-destinations-aqua, #pop-destinations-blue, #pop-destinations {
 		display: none;
-	}
-}
-/* @media (max-width: 1025px) {
-	.input-group {
-		width: 200px !important;
 	}
 } */
 @media (max-width: 768px) {
