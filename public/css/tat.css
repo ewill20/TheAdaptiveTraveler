@@ -203,7 +203,7 @@ html {
 
 #explore {
 	width: auto !important;
-	color: black;
+	color: white;
 	padding-bottom: 8px;
 	font-size: 30px !important;
 	font-family: 'Sriracha', cursive;
@@ -264,13 +264,8 @@ html {
 }
 #letsgo {
 	margin-top: 0px;
-	font-family: 'Sriracha', cursive;
-	background: #f2f8fc !important;
-	background-image: -webkit-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
-	background-image: -moz-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
-	background-image: -ms-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
-	background-image: -o-linear-gradient(top, #f2f8fc, #eb2c1e)!important;
-	background-image: linear-gradient(to bottom, #f2f8fc, #eb2c1e)!important;
+	font-family: 'Istok Web', sans-serif;
+	background: #eb2c1e !important;
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
@@ -395,7 +390,7 @@ html {
 }
 
 input[type="text"]#explore::-webkit-input-placeholder {
-	color: white !important;
+	color: black !important;
 	font-size: 25px !important;
 	width: auto;
 	opacity: 100%;
