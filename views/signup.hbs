@@ -1,125 +1,149 @@
-<!DOCTYPE html> 
-  <div id="content">
-    <div class="container-fluid" "landing-background">
-        <nav class="navbar navbar-collapse navbar-expand-lg mr-auto" id="landing-nav">
-            <div class="navbar-header" id="landing-header">
-                
-                <a href="/traveler1">
-                    <h2 class="navbar-brand"><img id="tatlogo" src="/Images/TATLogoDone2.png"></h2>
-                     
-                </a>
-            </div>
-            
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!DOCTYPE html>
+<div class="container-fluid">
+    <nav class="navbar collapse d-flex navbar-expand-lg mr-auto" id="landing-nav">
+        <div class="navbar-header" id="landing-header">
 
-            <div class="input-group collapse navbar-collapse" id="navbarSupportedContent">
-                <form id="form-search" method="get" action="" role="form" class="form-inline">
-                    <div class="form-group has-feedback">
-                        <div class="input-group">
-                            <input style="color: #e7e7e7 !important; padding-top: 15px" type="text" class="form-control form-inline" id="explore" placeholder="Explore" id="search-text-input">
-                            <span class="input-group-btn">
-                                <button id="letsgo" class="btn btn-default waves-effect" type="button">Let's Go!
-                                    <span>
-                                        <i class="fa fa-paper-plane-o ml-1"></i>
-                                    </span>
-                                </button>
-                            </span>
-                        </div>
-                    </div>   
-                </form>
-               
+            <a href="/traveler1">
+                <h2 class="navbar-brand"><img id="tatlogo" src="/Images/TATLogoDone2.png"></h2>
+
+            </a>
+        </div>
+
+
+        <div class="navbar-text text-center" id="slogan">
+            For The Traveler Who
+            </br>
+            Wants An Experience, Not A Trip...
+        </div>
+        <div class="container" style="max-width: 50px;">
+            <div class="bg2"></div>
+            <div class="button mr-auto"><a href="/languageSelector"><span
+                        class="flag-icon flag-icon-us"></span></a></button>
             </div>
-             <!-- Register for account button -->
-             {{!-- <a href="/signup">
-                <button class="btn btn-default" id="create-profile" type="button">Create A Profile
-                    <span>
-                        <i class="fa fa-user fa-2x"></i>
-                    </span>
-                </button></a>
-                <!-- login to your account button-->
-                <a href="/signin">
-                <button class="btn btn-default" id="yourTravels" type="button">Your Travels
-                    <span>
-                        <i class="fa fa-plane fa-2x ml-3"></i>
-                    </span>
-                </button></a> --}}
-        </nav>
-    </div>
-<div class="container-fluid landing-background">
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-2 col-xl-8 col-xl-offset-1">
-            <div class="panel panel-default" id="create-profile-panel">
-                <div class="panel panel-header text-center" id="create-profile-header">
-                    Create Your Profile
+        </div>
+    </nav>
+</div>
+
+    <div id="container" class="signup-background">
+        <ul class="nav ml-auto">
+            <li onclick="showLogin()">Login</li>
+            <li onclick="showSignup()">Sign up</li>
+            <li onclick="showForgotPassword()">Forgot password</li>
+            <li onclick="showSubscribe()">Subscribe</li>
+            <li onclick="showContactUs()">Contact us</li>
+        </ul>
+        <div class="wrapper">
+            <div class="rec-prism">
+                <div class="face face-top">
+                    <div class="content">
+                        <h2>Subscribe</h2>
+                        <small>Enter your email so we can send you the latest updates!</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="panel panel-body" id="profile-panel-body">
-                    <form action="/profile/:id" role="form" class="create-user">
-                        <div class="md-form">
-                            <i class="fa fa-id-card prefix grey-text"></i>
-                            <input type="text" class="form-control" id="name" placeholder="Name" required>
-                            <label for="name">
-                               
-                            </label>
+                <div class="face face-front">
+                    <div class="content">
+                        <h2>Sign in</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="username" placeholder="username">
+                                <label>username</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">Forgot Password? </span>
+                            <span class="signup" onclick="showSignup()">Not a user? Sign up</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-back">
+                    <div class="content">
+                        <h2>Forgot your password?</h2>
+                        <small>Enter your email so we can send you a reset link for your password</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-right">
+                    <div class="content">
+                        <h2>Sign up</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password2" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>re-enter password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="singin" onclick="showLogin()">Already a user? Sign in</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-left">
+                    <div class="content">
+                        <h2>Contact us</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="name" placeholder="name">
+                                <label>Name</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <textarea placeholder="your message"></textarea>
+                                <label>your message</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-bottom">
+                    <div class="content">
+                        <div class="thank-you-msg">
+                            Thank you!
                         </div>
-                        <div class="md-form">
-                            <i class="fa fa-envelope prefix grey-text"></i>
-                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
-                            <label for="email">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <i class="fa fa-map-marker prefix grey-text"></i>
-                            <input type="text" class="form-control" id="location" placeholder="Enter Your Location" required>
-                            <label for="location">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <i class="fa fa-user prefix grey-text"></i>
-                            <input type="text" class="form-control" id="handle" placeholder="Enter A Handle" required>
-                            <label for="handle">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <i class="fa fa-qrcode prefix grey-text"></i>
-                            <input type="password" class="form-control" id="password1" placeholder="Please Enter A Password" required>
-                            <label for="password1">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <i class="fa fa-thumbs-o-up prefix grey-text"></i>
-                            <input type="password" class="form-control" id="password2" placeholder="Please Confirm Your Password" required>
-                            <label for="password2">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <i class="fa fa-photo suffix grey-text"></i>
-                            <input type="file" name="profile-photo" id="profile-input" accept="image/*">
-                            <label for="profile-photo">
-                                
-                            </label>
-                        </div>
-                        <div class="md-form">
-                            <button type="button" class="btn btn-default" id="creating-profile">Submit
-                                <span>
-                                    <i class="fa fa-sun-o ml-1"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 <footer class="footer">
-    © 2017 The Adaptive Traveler
+    © 2020 The Adaptive Traveler
 </footer>
