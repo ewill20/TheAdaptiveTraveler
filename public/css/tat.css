@@ -36,6 +36,48 @@ body {
 	height: 700px;
 	border-bottom: 4px solid #eb2c1e;
 }
+.au-background {
+	background-image: url("../Images/NLGroningenColors1.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.cn-background {
+	background-image: url("../Images/CNXiangjiTemple.jpg") !important;
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.de-background {
+	background-image: url("../Images/DESolidified.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.fr-background {
+	background-image: url("../Images/ParisMetro.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.nl-background {
+	background-image: url("../Images/NLAmsterdamSingel.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.it-background {
+	background-image: url("../Images/VeneziaColors.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
+.jp-background {
+	background-image: url("../Images/TokyoHanazonoShrine.jpg") !important; 
+	background-size: cover !important;
+	height: 700px;
+	border-bottom: 4px solid #eb2c1e;
+}
 .about-background {
 	background-image: url("../Images/CNShadowKnight.jpg") !important;
 	background-size: cover !important;
