@@ -64,6 +64,8 @@ app.get('/mexicoLanding', authController.mexicoLanding);
 
 app.get('/mongoliaLanding', authController.mongoliaLanding);
 
+app.get('/philippinesLanding', authController.philippinesLanding);
+
 app.get('/polandLanding', authController.polandLanding);
 
 
@@ -92,6 +94,8 @@ app.get('/signupKorean', authController.signupKorean);
 app.get('/signupMexico', authController.signupMexico);
 
 app.get('/signupMongolia', authController.signupMongolia);
+
+app.get('/signupPhilippines', authController.signupPhilippines);
 
 app.get('/signupPoland', authController.signupPoland);
 

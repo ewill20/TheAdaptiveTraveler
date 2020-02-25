@@ -125,6 +125,10 @@ exports.mongoliaLanding = function(req,res){
 
 	res.render('mongoliaLanding'); 
 }
+exports.philippinesLanding = function(req,res){
+
+	res.render('philippinesLanding'); 
+}
 exports.polandLanding = function(req,res){
 
 	res.render('polandLanding'); 
@@ -180,6 +184,10 @@ exports.signupMexico = function(req,res){
 exports.signupMongolia = function(req,res){
 
 	res.render('signupMongolia'); 
+}
+exports.signupPhilippines = function(req,res){
+
+	res.render('signupPhilippines'); 
 }
 exports.signupPoland = function(req,res){
 
