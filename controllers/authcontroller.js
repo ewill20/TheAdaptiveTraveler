@@ -129,6 +129,34 @@ exports.polandLanding = function(req,res){
 
 	res.render('polandLanding'); 
 }
+exports.russiaLanding = function(req,res){
+
+	res.render('russiaLanding'); 
+}
+exports.scotlandLanding = function(req,res){
+
+	res.render('scotlandLanding'); 
+}
+exports.southafricaLanding = function(req,res){
+
+	res.render('southafricaLanding'); 
+}
+exports.spainLanding = function(req,res){
+
+	res.render('spainLanding'); 
+}
+exports.swedenLanding = function(req,res){
+
+	res.render('swedenLanding'); 
+}
+exports.thailandLanding = function(req,res){
+
+	res.render('thailandLanding'); 
+}
+exports.ukraineLanding = function(req,res){
+
+	res.render('ukraineLanding'); 
+}
 
 
 
@@ -188,6 +216,34 @@ exports.signupPhilippines = function(req,res){
 exports.signupPoland = function(req,res){
 
 	res.render('signupPoland'); 
+}
+exports.signupRussia = function(req,res){
+
+	res.render('signupRussia'); 
+}
+exports.signupScotland = function(req,res){
+
+	res.render('signupScotland'); 
+}
+exports.signupSAfrica = function(req,res){
+
+	res.render('signupSAfrica'); 
+}
+exports.signupSpain = function(req,res){
+
+	res.render('signupSpain'); 
+}
+exports.signupSweden = function(req,res){
+
+	res.render('signupSweden'); 
+}
+exports.signupThailand = function(req,res){
+
+	res.render('signupThailand'); 
+}
+exports.signupUkraine = function(req,res){
+
+	res.render('signupUkraine'); 
 }
 
 

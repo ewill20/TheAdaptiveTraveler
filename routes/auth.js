@@ -66,6 +66,20 @@ app.get('/philippinesLanding', authController.philippinesLanding);
 
 app.get('/polandLanding', authController.polandLanding);
 
+app.get('/russiaLanding', authController.russiaLanding);
+
+app.get('/scotlandLanding', authController.scotlandLanding);
+
+app.get('/southafricaLanding', authController.southafricaLanding);
+
+app.get('/spainLanding', authController.spainLanding);
+
+app.get('/swedenLanding', authController.swedenLanding);
+
+app.get('/thailandLanding', authController.thailandLanding);
+
+app.get('/ukraineLanding', authController.ukraineLanding);
+
 
 
 
@@ -96,6 +110,20 @@ app.get('/signupMongolia', authController.signupMongolia);
 app.get('/signupPhilippines', authController.signupPhilippines);
 
 app.get('/signupPoland', authController.signupPoland);
+
+app.get('/signupRussia', authController.signupRussia);
+
+app.get('/signupScotland', authController.signupScotland);
+
+app.get('/signupSAfrica', authController.signupSAfrica);
+
+app.get('/signupSpain', authController.signupSpain);
+
+app.get('/signupSweden', authController.signupSweden);
+
+app.get('/signupThailand', authController.signupThailand);
+
+app.get('/signupUkraine', authController.signupUkraine);
 
 
 
