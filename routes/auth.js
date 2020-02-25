@@ -42,17 +42,37 @@ app.get('/aussieLanding', authController.aussieLanding);
 
 app.get('/chinaLanding', authController.chinaLanding);
 
+app.get('/dutchLanding', authController.dutchLanding);
+
 app.get('/frenchLanding', authController.frenchLanding);
 
 app.get('/germanLanding', authController.germanLanding);
+
+app.get('/irishLanding', authController.irishLanding);
+
+app.get('/japaneseLanding', authController.japaneseLanding);
+
+app.get('/kiwiLanding', authController.kiwiLanding);
+
+app.get('/koreanLanding', authController.koreanLanding);
 
 app.get('/signupAussie', authController.signupAussie);
 
 app.get('/signupChinese', authController.signupChinese);
 
+app.get('/signupDutch', authController.signupDutch);
+
 app.get('/signupFrench', authController.signupFrench);
 
 app.get('/signupGerman', authController.signupGerman);
+
+app.get('/signupIrish', authController.signupIrish);
+
+app.get('/signupJapan', authController.signupJapan);
+
+app.get('/signupKiwi', authController.signupKiwi);
+
+app.get('/signupKorean', authController.signupKorean);
 
 app.post('/traveler1', function(req, res, next) {
     console.log("whatever");

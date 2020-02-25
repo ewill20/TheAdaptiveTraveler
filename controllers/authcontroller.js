@@ -85,6 +85,10 @@ exports.chinaLanding = function(req,res){
 
 	res.render('chinaLanding'); 
 }
+exports.dutchLanding = function(req,res){
+
+	res.render('dutchLanding'); 
+}
 exports.frenchLanding = function(req,res){
 
 	res.render('frenchLanding'); 
@@ -92,6 +96,22 @@ exports.frenchLanding = function(req,res){
 exports.germanLanding = function(req,res){
 
 	res.render('germanLanding'); 
+}
+exports.irishLanding = function(req,res){
+
+	res.render('irishLanding'); 
+}
+exports.japaneseLanding = function(req,res){
+
+	res.render('japaneseLanding'); 
+}
+exports.kiwiLanding = function(req,res){
+
+	res.render('kiwiLanding'); 
+}
+exports.koreanLanding = function(req,res){
+
+	res.render('koreanLanding'); 
 }
 exports.signupAussie = function(req,res){
 
@@ -101,6 +121,10 @@ exports.signupChinese = function(req,res){
 
 	res.render('signupChinese'); 
 }
+exports.signupDutch = function(req,res){
+
+	res.render('signupDutch'); 
+}
 exports.signupFrench = function(req,res){
 
 	res.render('signupFrench'); 
@@ -108,6 +132,22 @@ exports.signupFrench = function(req,res){
 exports.signupGerman = function(req,res){
 
 	res.render('signupGerman'); 
+}
+exports.signupIrish = function(req,res){
+
+	res.render('signupIrish'); 
+}
+exports.signupJapan = function(req,res){
+
+	res.render('signupJapan'); 
+}
+exports.signupKiwi = function(req,res){
+
+	res.render('signupKiwi'); 
+}
+exports.signupKorean = function(req,res){
+
+	res.render('signupKorean'); 
 }
 exports.logout = function(req,res){
 
