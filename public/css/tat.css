@@ -967,10 +967,6 @@ close:focus
 	margin: 10px 10px 10px 10px;
 	border: 1px solid black;
 }
-.flag-icon {
-	border: white solid 1px;
-}
-
 
 * {
   box-sizing: border-box;
@@ -1142,7 +1138,7 @@ body {
 .nav li {
   display: inline-block;
   list-style-type: none;
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 0 10px;
   color: white;
   font-weight: bold;
@@ -1166,6 +1162,7 @@ body {
   display: block;
   margin: 20px 0;
   font-size: 0.75em;
+  font-weight: bold;
   text-align: center;
   color: #eb2c1e;
   cursor: pointer;

@@ -12,8 +12,6 @@ app.get('/contact', authController.contact);
 
 app.get('/signup', authController.signup);
 
-app.get('/signin', authController.signin);
-
 app.get('/berlin', authController.berlin);
 
 app.get('/kyoto', authController.kyoto);
@@ -40,23 +38,26 @@ app.get('/photoLocations', authController.photoLocations);
 
 app.get('/languageSelector', authController.languageSelector);
 
+app.get('/aussieLanding', authController.aussieLanding);
+
+app.get('/chinaLanding', authController.chinaLanding);
+
+app.get('/frenchLanding', authController.frenchLanding);
+
+app.get('/germanLanding', authController.germanLanding);
+
+app.get('/signupAussie', authController.signupAussie);
+
+app.get('/signupChinese', authController.signupChinese);
+
+app.get('/signupFrench', authController.signupFrench);
+
+app.get('/signupGerman', authController.signupGerman);
+
 app.post('/traveler1', function(req, res, next) {
     console.log("whatever");
     passport.authenticate('local-signup');
-    // passport.authenticate('local-signup', function(err, user, info) {
-    //     if (err) {
-    //         return next(err); // will generate a 500 error
-    //       }
-    //     console.log("whatever 2");
-    //     console.log(email);
-    //     try {
-            // res.render('/profile');
-    //     }
-    //     catch (err) {
-    //         console.log(err)
-    //         res.redirect('/signup')
-    //     }
-    // });
+    
 });
 
 

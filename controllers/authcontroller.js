@@ -41,10 +41,6 @@ exports.signup = function(req,res){
   
     res.render('signup'); 
 }
-exports.signin = function(req,res){
-
-	res.render('signin'); 
-}
 exports.profile = function(req,res){
 
 	res.render('profile'); 
@@ -80,6 +76,38 @@ exports.Australia = function(req,res){
 exports.languageSelector = function(req,res){
 
 	res.render('languageSelector'); 
+}
+exports.aussieLanding = function(req,res){
+
+	res.render('aussieLanding'); 
+}
+exports.chinaLanding = function(req,res){
+
+	res.render('chinaLanding'); 
+}
+exports.frenchLanding = function(req,res){
+
+	res.render('frenchLanding'); 
+}
+exports.germanLanding = function(req,res){
+
+	res.render('germanLanding'); 
+}
+exports.signupAussie = function(req,res){
+
+	res.render('signupAussie'); 
+}
+exports.signupChinese = function(req,res){
+
+	res.render('signupChinese'); 
+}
+exports.signupFrench = function(req,res){
+
+	res.render('signupFrench'); 
+}
+exports.signupGerman = function(req,res){
+
+	res.render('signupGerman'); 
 }
 exports.logout = function(req,res){
 
