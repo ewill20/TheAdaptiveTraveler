@@ -101,6 +101,10 @@ exports.irishLanding = function(req,res){
 
 	res.render('irishLanding'); 
 }
+exports.italyLanding = function(req,res){
+
+	res.render('italyLanding'); 
+}
 exports.japaneseLanding = function(req,res){
 
 	res.render('japaneseLanding'); 
@@ -113,6 +117,22 @@ exports.koreanLanding = function(req,res){
 
 	res.render('koreanLanding'); 
 }
+exports.mexicoLanding = function(req,res){
+
+	res.render('mexicoLanding'); 
+}
+exports.mongoliaLanding = function(req,res){
+
+	res.render('mongoliaLanding'); 
+}
+exports.polandLanding = function(req,res){
+
+	res.render('polandLanding'); 
+}
+
+
+
+
 exports.signupAussie = function(req,res){
 
 	res.render('signupAussie'); 
@@ -137,6 +157,10 @@ exports.signupIrish = function(req,res){
 
 	res.render('signupIrish'); 
 }
+exports.signupItaly = function(req,res){
+
+	res.render('signupItaly'); 
+}
 exports.signupJapan = function(req,res){
 
 	res.render('signupJapan'); 
@@ -149,6 +173,21 @@ exports.signupKorean = function(req,res){
 
 	res.render('signupKorean'); 
 }
+exports.signupMexico = function(req,res){
+
+	res.render('signupMexico'); 
+}
+exports.signupMongolia = function(req,res){
+
+	res.render('signupMongolia'); 
+}
+exports.signupPoland = function(req,res){
+
+	res.render('signupPoland'); 
+}
+
+
+
 exports.logout = function(req,res){
 
   req.session.destroy(function(err) {

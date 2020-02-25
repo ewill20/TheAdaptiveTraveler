@@ -38,6 +38,8 @@ app.get('/photoLocations', authController.photoLocations);
 
 app.get('/languageSelector', authController.languageSelector);
 
+
+
 app.get('/aussieLanding', authController.aussieLanding);
 
 app.get('/chinaLanding', authController.chinaLanding);
@@ -50,11 +52,22 @@ app.get('/germanLanding', authController.germanLanding);
 
 app.get('/irishLanding', authController.irishLanding);
 
+app.get('/italyLanding', authController.italyLanding);
+
 app.get('/japaneseLanding', authController.japaneseLanding);
 
 app.get('/kiwiLanding', authController.kiwiLanding);
 
 app.get('/koreanLanding', authController.koreanLanding);
+
+app.get('/mexicoLanding', authController.mexicoLanding);
+
+app.get('/mongoliaLanding', authController.mongoliaLanding);
+
+app.get('/polandLanding', authController.polandLanding);
+
+
+
 
 app.get('/signupAussie', authController.signupAussie);
 
@@ -68,11 +81,21 @@ app.get('/signupGerman', authController.signupGerman);
 
 app.get('/signupIrish', authController.signupIrish);
 
+app.get('/signupItaly', authController.signupItaly);
+
 app.get('/signupJapan', authController.signupJapan);
 
 app.get('/signupKiwi', authController.signupKiwi);
 
 app.get('/signupKorean', authController.signupKorean);
+
+app.get('/signupMexico', authController.signupMexico);
+
+app.get('/signupMongolia', authController.signupMongolia);
+
+app.get('/signupPoland', authController.signupPoland);
+
+
 
 app.post('/traveler1', function(req, res, next) {
     console.log("whatever");
