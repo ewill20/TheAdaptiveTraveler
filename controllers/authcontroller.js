@@ -33,10 +33,6 @@ exports.hangzhou = function(req, res) {
   
   res.render('hangzhou');
 }
-exports.contact = function(req,res) {
-
-  res.render('contact');
-}
 exports.signup = function(req,res){
   
     res.render('signup'); 

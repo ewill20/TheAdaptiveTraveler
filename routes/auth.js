@@ -8,8 +8,6 @@ app.get('/traveler1', authController.traveler1);
 
 app.get('/about', authController.about);
 
-app.get('/contact', authController.contact);
-
 app.get('/signup', authController.signup);
 
 app.get('/berlin', authController.berlin);
